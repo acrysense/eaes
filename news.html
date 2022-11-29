@@ -55,6 +55,8 @@
 						<button class="c-language header__language">
 							<span class="c-language__value c-language__value--active">EN</span>
 							<span class="c-language__value">RU</span>
+							<span class="c-language__value">GE</span>
+							<span class="c-language__value">CHI</span>
 						</button>
 						<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
 							<span class="hamburger__inner"></span>
@@ -88,35 +90,440 @@
 		<!-- end of mobile menu -->
 		<!-- content -->
 		<div class="wrapper__content">
-			<!-- main -->
-			<section class="main" id="main">
+			<!-- decor -->
+			<div class="wrapper__decor">
+				<div class="bg-top"></div>
+				<div class="bg-top-circle bg-top-circle--sm"></div>
+				<div class="bg-top-circle bg-top-circle--md"></div>
+				<div class="bg-top-circle bg-top-circle--lg"></div>
+				<div class="bg-top-circle bg-top-circle--xl"></div>
+			</div>
+			<!-- end of decor -->
+			<!-- page top -->
+			<section class="page-top" id="page-top">
 				<div class="container">
-					<div class="main__slider">
-						<div class="swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="main__slide">
-										<div class="main__body">
-											<h3 class="main__title">Межрегиональное сотрудничество ЕАЭС</h3>
-											<p class="main__description">Поиск инвесторов, публикация информации о проектах, содействие развитию</p>
+					<nav class="breadcrumb page-top__breadcrumb" aria-label="Breadcrumb">
+						<ol class="breadcrumb__list">
+							<li class="breadcrumb__item">
+								<a href="index.html" class="breadcrumb__link">Главная</a>
+							</li>
+							<li class="breadcrumb__item">
+								<a href="news.html" class="breadcrumb__link">Новости</a>
+							</li>
+						</ol>
+					</nav>
+				</div>
+			</section>
+			<!-- end of page top -->
+			<!-- news calendar -->
+			<div class="news-calendar" id="news-calendar">
+				<div class="container">
+					<h1 class="page-heading news-calendar__heading">Новости</h1>
+					<div class="news-calendar__wrap">
+						<div class="news-calendar__left">
+							<div class="news-calendar__top news-calendar__top--desktop">
+								<div class="select-box news-calendar__select">
+									<div class="select-box__container">
+										<div class="select-box__wrap">
+											<div class="select-box__scroll">
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="countries-select-01" name="countries-select">
+													<label for="countries-select-01" class="select-box__label">
+														<span class="select-box__icon"></span>
+														<span class="select-box__title">Армения</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="countries-select-02" name="countries-select">
+													<label for="countries-select-02" class="select-box__label">
+														<span class="select-box__icon"></span>
+														<span class="select-box__title">Беларусь</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="countries-select-03" name="countries-select">
+													<label for="countries-select-03" class="select-box__label">
+														<span class="select-box__icon"></span>
+														<span class="select-box__title">Казахстан</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="countries-select-04" name="countries-select">
+													<label for="countries-select-04" class="select-box__label">
+														<span class="select-box__icon"></span>
+														<span class="select-box__title">Киргизия</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="countries-select-05" name="countries-select">
+													<label for="countries-select-05" class="select-box__label">
+														<span class="select-box__icon"></span>
+														<span class="select-box__title">Россия</span>
+													</label>
+												</div>
+											</div>
 										</div>
-										<picture class="main__img">
-											<img src="img/main-01.png" alt="Image">
-										</picture>
+									</div>
+									<div class="select-box__selected">
+										<span class="select-box__placeholder select-box__placeholder--active">Страна</span>
+										<span class="select-box__values"></span>
+									</div>
+								</div>
+								<div class="select-box news-calendar__select">
+									<div class="select-box__container">
+										<div class="select-box__wrap">
+											<div class="select-box__scroll">
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="countries-select-01" name="countries-select">
+													<label for="countries-select-01" class="select-box__label">
+														<span class="select-box__icon"></span>
+														<span class="select-box__title">Армения</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="countries-select-02" name="countries-select">
+													<label for="countries-select-02" class="select-box__label">
+														<span class="select-box__icon"></span>
+														<span class="select-box__title">Беларусь</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="countries-select-03" name="countries-select">
+													<label for="countries-select-03" class="select-box__label">
+														<span class="select-box__icon"></span>
+														<span class="select-box__title">Казахстан</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="countries-select-04" name="countries-select">
+													<label for="countries-select-04" class="select-box__label">
+														<span class="select-box__icon"></span>
+														<span class="select-box__title">Киргизия</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="countries-select-05" name="countries-select">
+													<label for="countries-select-05" class="select-box__label">
+														<span class="select-box__icon"></span>
+														<span class="select-box__title">Россия</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="select-box__selected">
+										<span class="select-box__placeholder select-box__placeholder--active">Регион</span>
+										<span class="select-box__values"></span>
+									</div>
+								</div>
+								<div class="select-box select-box--single news-calendar__select">
+									<div class="select-box__container">
+										<div class="select-box__wrap">
+											<div class="select-box__scroll">
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="countries-select-01" name="countries-select">
+													<label for="countries-select-01" class="select-box__label">
+														<span class="select-box__title">Армения</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="countries-select-02" name="countries-select">
+													<label for="countries-select-02" class="select-box__label">
+														<span class="select-box__title">Беларусь</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="countries-select-03" name="countries-select">
+													<label for="countries-select-03" class="select-box__label">
+														<span class="select-box__title">Казахстан</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="countries-select-04" name="countries-select">
+													<label for="countries-select-04" class="select-box__label">
+														<span class="select-box__title">Киргизия</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="countries-select-05" name="countries-select">
+													<label for="countries-select-05" class="select-box__label">
+														<span class="select-box__title">Россия</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="select-box__selected">
+										<span class="select-box__placeholder select-box__placeholder--active">Отрасль</span>
+										<span class="select-box__values"></span>
+									</div>
+								</div>
+							</div>
+							<div class="news-calendar__wrapper">
+								<a href="news-inner.html" class="news-calendar__item">
+									<picture class="news-calendar__img">
+										<img src="img/news-01.jpg" alt="Image">
+									</picture>
+									<div class="news-calendar__body">
+										<div class="news-calendar__tags">
+											<span class="news-calendar__tag news-calendar__tag--orange">Россия</span>
+											<span class="news-calendar__tag news-calendar__tag--orange">Россия</span>
+											<span class="news-calendar__tag news-calendar__tag--pink">Краснодарский край</span>
+											<span class="news-calendar__tag news-calendar__tag--pink">Сибирь</span>
+											<span class="news-calendar__tag">Экономика</span>
+											<span class="news-calendar__tag">Торговля</span>
+										</div>
+										<span class="news-calendar__title">Безработица в ЕАЭС сократилась на 22,6% в августе 2022 года</span>
+										<span class="news-calendar__date">11 октября 2022</span>
+									</div>
+								</a>
+								<a href="news-inner.html" class="news-calendar__item">
+									<picture class="news-calendar__img">
+										<img src="img/news-02.jpg" alt="Image">
+									</picture>
+									<div class="news-calendar__body">
+										<div class="news-calendar__tags">
+											<span class="news-calendar__tag news-calendar__tag--orange">Казахстан</span>
+											<span class="news-calendar__tag">Экономика</span>
+											<span class="news-calendar__tag">Торговля</span>
+										</div>
+										<span class="news-calendar__title">Принят перечень продукции с кодами ТН ВЭД ЕАЭС к техническому регламенту «О безопасности мяса и мясной продукции»</span>
+										<span class="news-calendar__date">11 октября 2022</span>
+									</div>
+								</a>
+								<a href="news-inner.html" class="news-calendar__item">
+									<picture class="news-calendar__img">
+										<img src="img/news-03.jpg" alt="Image">
+									</picture>
+									<div class="news-calendar__body">
+										<div class="news-calendar__tags">
+											<span class="news-calendar__tag">Торговля</span>
+										</div>
+										<span class="news-calendar__title">В Евразийский сетевой университет включено еще четыре вуза из Казахстана и России</span>
+										<span class="news-calendar__date">11 октября 2022</span>
+									</div>
+								</a>
+								<a href="news-inner.html" class="news-calendar__item">
+									<picture class="news-calendar__img">
+										<img src="img/news-04.jpg" alt="Image">
+									</picture>
+									<div class="news-calendar__body">
+										<div class="news-calendar__tags">
+											<span class="news-calendar__tag news-calendar__tag--pink">Сибирь</span>
+											<span class="news-calendar__tag">Экономика</span>
+											<span class="news-calendar__tag">Торговля</span>
+										</div>
+										<span class="news-calendar__title">Арзыбек Кожошев: «Энергомощности и транспортные коридоры могут и должны стать базисом процветания стран Союза»</span>
+										<span class="news-calendar__date">11 октября 2022</span>
+									</div>
+								</a>
+							</div>
+							<div class="pagination news-calendar__pagination">
+								<button class="pagination__button pagination__button--prev" aria-label="Назад">
+									<svg class="pagination__button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
+								</button>
+								<ul class="pagination__list">
+									<li class="pagination__item">
+										<a href="#" class="pagination__button">1</a>
+									</li>
+									<li class="pagination__item pagination__item--plug">
+										<button class="pagination__button" disabled>...</button>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__button">7</a>
+									</li>
+									<li class="pagination__item pagination__item--active">
+										<a href="#" class="pagination__button">8</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__button">9</a>
+									</li>
+									<li class="pagination__item pagination__item--plug">
+										<button class="pagination__button" disabled>...</button>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__button">11</a>
+									</li>
+								</ul>
+								<button class="pagination__button pagination__button--next" aria-label="Далее">
+									<svg class="pagination__button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="news-calendar__right">
+							<div class="news-calendar__top">
+								<div class="c-search c-search--active news-calendar__search">
+									<input type="text" class="c-search__input" placeholder="Поиск">
+									<button class="c-search__btn" aria-label="Поиск">
+										<svg class="c-search__btn-icon">
+											<use xlink:href="img/sprite.svg#icon-search"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="news-calendar-filter news-calendar__filter">
+								<button class="news-calendar-filter__btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-filters"></use>
+									</svg>
+									<span>Фильтры</span>
+								</button>
+								<div class="news-calendar-filter__wrapper">
+									<div class="c-search c-search--active news-calendar__search">
+										<input type="text" class="c-search__input" placeholder="Поиск">
+										<button class="c-search__btn" aria-label="Поиск">
+											<svg class="c-search__btn-icon">
+												<use xlink:href="img/sprite.svg#icon-search"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="select-box news-calendar__select">
+										<div class="select-box__container">
+											<div class="select-box__wrap">
+												<div class="select-box__scroll">
+													<div class="select-box__option">
+														<input type="checkbox" class="select-box__radio" id="countries-select-01" name="countries-select">
+														<label for="countries-select-01" class="select-box__label">
+															<span class="select-box__icon"></span>
+															<span class="select-box__title">Армения</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="checkbox" class="select-box__radio" id="countries-select-02" name="countries-select">
+														<label for="countries-select-02" class="select-box__label">
+															<span class="select-box__icon"></span>
+															<span class="select-box__title">Беларусь</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="checkbox" class="select-box__radio" id="countries-select-03" name="countries-select">
+														<label for="countries-select-03" class="select-box__label">
+															<span class="select-box__icon"></span>
+															<span class="select-box__title">Казахстан</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="checkbox" class="select-box__radio" id="countries-select-04" name="countries-select">
+														<label for="countries-select-04" class="select-box__label">
+															<span class="select-box__icon"></span>
+															<span class="select-box__title">Киргизия</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="checkbox" class="select-box__radio" id="countries-select-05" name="countries-select">
+														<label for="countries-select-05" class="select-box__label">
+															<span class="select-box__icon"></span>
+															<span class="select-box__title">Россия</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="select-box__selected">
+											<span class="select-box__placeholder select-box__placeholder--active">Страна</span>
+											<span class="select-box__values"></span>
+										</div>
+									</div>
+									<div class="select-box news-calendar__select">
+										<div class="select-box__container">
+											<div class="select-box__wrap">
+												<div class="select-box__scroll">
+													<div class="select-box__option">
+														<input type="checkbox" class="select-box__radio" id="countries-select-01" name="countries-select">
+														<label for="countries-select-01" class="select-box__label">
+															<span class="select-box__icon"></span>
+															<span class="select-box__title">Армения</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="checkbox" class="select-box__radio" id="countries-select-02" name="countries-select">
+														<label for="countries-select-02" class="select-box__label">
+															<span class="select-box__icon"></span>
+															<span class="select-box__title">Беларусь</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="checkbox" class="select-box__radio" id="countries-select-03" name="countries-select">
+														<label for="countries-select-03" class="select-box__label">
+															<span class="select-box__icon"></span>
+															<span class="select-box__title">Казахстан</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="checkbox" class="select-box__radio" id="countries-select-04" name="countries-select">
+														<label for="countries-select-04" class="select-box__label">
+															<span class="select-box__icon"></span>
+															<span class="select-box__title">Киргизия</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="checkbox" class="select-box__radio" id="countries-select-05" name="countries-select">
+														<label for="countries-select-05" class="select-box__label">
+															<span class="select-box__icon"></span>
+															<span class="select-box__title">Россия</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="select-box__selected">
+											<span class="select-box__placeholder select-box__placeholder--active">Регион</span>
+											<span class="select-box__values"></span>
+										</div>
+									</div>
+									<div class="select-box select-box--single news-calendar__select">
+										<div class="select-box__container">
+											<div class="select-box__wrap">
+												<div class="select-box__scroll">
+													<div class="select-box__option">
+														<input type="radio" class="select-box__radio" id="countries-select-01" name="countries-select">
+														<label for="countries-select-01" class="select-box__label">
+															<span class="select-box__title">Армения</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="radio" class="select-box__radio" id="countries-select-02" name="countries-select">
+														<label for="countries-select-02" class="select-box__label">
+															<span class="select-box__title">Беларусь</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="radio" class="select-box__radio" id="countries-select-03" name="countries-select">
+														<label for="countries-select-03" class="select-box__label">
+															<span class="select-box__title">Казахстан</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="radio" class="select-box__radio" id="countries-select-04" name="countries-select">
+														<label for="countries-select-04" class="select-box__label">
+															<span class="select-box__title">Киргизия</span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="radio" class="select-box__radio" id="countries-select-05" name="countries-select">
+														<label for="countries-select-05" class="select-box__label">
+															<span class="select-box__title">Россия</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="select-box__selected">
+											<span class="select-box__placeholder select-box__placeholder--active">Отрасль</span>
+											<span class="select-box__values"></span>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- background top -->
-				<div class="bg-top-circle bg-top-circle--sm"></div>
-				<div class="bg-top-circle bg-top-circle--md"></div>
-				<div class="bg-top-circle bg-top-circle--lg"></div>
-				<div class="bg-top-circle bg-top-circle--xl"></div>
-				<!-- end of background top -->
-			</section>
-			<!-- end of main -->
+			</div>
+			<!-- end of news calendar -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->

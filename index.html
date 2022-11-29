@@ -55,6 +55,8 @@
 						<button class="c-language header__language">
 							<span class="c-language__value c-language__value--active">EN</span>
 							<span class="c-language__value">RU</span>
+							<span class="c-language__value">GE</span>
+							<span class="c-language__value">CHI</span>
 						</button>
 						<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
 							<span class="hamburger__inner"></span>
@@ -88,6 +90,15 @@
 		<!-- end of mobile menu -->
 		<!-- content -->
 		<div class="wrapper__content">
+			<!-- decor -->
+			<div class="wrapper__decor">
+				<div class="bg-top"></div>
+				<div class="bg-top-circle bg-top-circle--sm"></div>
+				<div class="bg-top-circle bg-top-circle--md"></div>
+				<div class="bg-top-circle bg-top-circle--lg"></div>
+				<div class="bg-top-circle bg-top-circle--xl"></div>
+			</div>
+			<!-- end of decor -->
 			<!-- main -->
 			<section class="main" id="main">
 				<div class="main__slider">
@@ -130,12 +141,6 @@
 						</button>
 					</div>
 				</div>
-				<!-- background top -->
-				<div class="bg-top-circle bg-top-circle--sm"></div>
-				<div class="bg-top-circle bg-top-circle--md"></div>
-				<div class="bg-top-circle bg-top-circle--lg"></div>
-				<div class="bg-top-circle bg-top-circle--xl"></div>
-				<!-- end of background top -->
 			</section>
 			<!-- end of main -->
 			<!-- marquee -->
@@ -492,6 +497,14 @@
 								<img src="img/news-05.jpg" alt="Image">
 							</picture>
 						</div>
+						<a href="news.html" class="news__more btn-round">
+							<picture class="btn-round__img">
+								<img src="img/text-round-view-all.svg" alt="Смотреть все">
+							</picture>
+							<svg class="btn-round__arrow">
+								<use xlink:href="img/sprite.svg#icon-arrow-decor-right"></use>
+							</svg>
+						</a>
 					</div>
 				</div>
 			</section>
@@ -620,7 +633,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="tabs__wrapper"></div>
+						<div class="tabs__wrapper">
+							<div class="calendar-events events__calendar"></div>
+						</div>
 					</div>
 				</div>
 			</section>
