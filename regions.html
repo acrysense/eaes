@@ -55,8 +55,6 @@
 						<button class="c-language header__language">
 							<span class="c-language__value c-language__value--active">EN</span>
 							<span class="c-language__value">RU</span>
-							<span class="c-language__value">GE</span>
-							<span class="c-language__value">CHI</span>
 						</button>
 						<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
 							<span class="hamburger__inner"></span>
@@ -114,7 +112,7 @@
 						</ol>
 					</nav>
 					<div class="page-top__main">
-						<div class="regions">
+						<div class="regions" id="regions">
 							<div class="select-box select-box--single regions__select">
 								<div class="select-box__container">
 									<div class="select-box__wrap">
@@ -162,56 +160,72 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end of page top -->
-			<!-- key industries -->
-			<div class="key-industries" id="key-industries">
-				<div class="container">
-					<div class="key-industries__wrapper">
-						<div class="key-industries__left">
-							<h2 class="key-industries__heading">Ключевые отрасли</h2>
-						</div>
-						<div class="key-industries__right">
-							<div class="investment-projects">
-								<h3 class="investment-projects__title">Инвест-проекты Краснодарского Края</h3>
-								<ul class="investment-projects__list">
-									<li class="investment-projects__item">
-										<a href="#" class="investment-projects__link">
-											<svg class="investment-projects__icon">
-												<use xlink:href="img/sprite.svg#icon-star"></use>
-											</svg>
-											<span class="investment-projects__title">Организация производства, хранение и реализация битума, нефтепродуктов, асфальта</span>
-											<svg class="investment-projects__arrow">
+						<div class="key-industries" id="key-industries">
+							<div class="key-industries__wrapper">
+								<div class="key-industries__left">
+									<h2 class="key-industries__heading">Ключевые отрасли</h2>
+									<div class="content key-industries__content">
+										<ul class="list-icon">
+											<li>
+												<span style="background-image: url(img/key-industries-icon-01.svg);"></span>
+												<p>Экономику региона возглавляют отрасли сельского хозяйства (<b>10% в структуре ВРП</b>), строительства (<b>6,5%</b>), торговли (<b>16,5%</b>), туризма и транспорта (<b>17,7%</b>). Кроме этого, активно развивается промышленность, виноделие, туризм, генерация на основе использования возобновляемых источников энергии (ВИЭ) и информационные технологии.</p>
+											</li>
+											<li>
+												<span style="background-image: url(img/key-industries-icon-02.svg);"></span>
+												<p>Развитая транспортная система региона включает в себя международные аэропорты и железнодорожные узлы, вся территория Краснодарского края обеспечена сетью автодорог. Через Азовское и Черное моря есть прямой выход на международные внешнеторговые пути. В этой связи, Краснодарский край считается по праву самым инвестиционно привлекательным субъектом Российской Федерации.</p>
+											</li>
+											<li>
+												<span style="background-image: url(img/key-industries-icon-03.svg);"></span>
+												<p><b>С 2019 года</b> объем производства сельского хозяйства составил <b>412 млрд рублей</b>, соответственно за три года объем вырос на <b>12,8%</b>.</p>
+											</li>
+											<li>
+												<span style="background-image: url(img/key-industries-icon-04.svg);"></span>
+												<p>Регион вошел в пятерку лучших в стране по производству мяса и яиц, занимает второе место в стране по валовому надою среди сельскохозяйственных организаций. В Краснодарском крае выращивается половина российских ягод и фруктов.</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="key-industries__right">
+									<div class="investment-projects">
+										<h3 class="investment-projects__heading">Инвест-проекты Краснодарского Края</h3>
+										<ul class="investment-projects__list">
+											<li class="investment-projects__item">
+												<a href="#" class="investment-projects__link">
+													<svg class="investment-projects__icon">
+														<use xlink:href="img/sprite.svg#icon-star"></use>
+													</svg>
+													<span class="investment-projects__title">Организация производства, хранение и реализация битума, нефтепродуктов, асфальта</span>
+													<svg class="investment-projects__arrow">
+														<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</li>
+											<li class="investment-projects__item">
+												<a href="#" class="investment-projects__link">
+													<svg class="investment-projects__icon">
+														<use xlink:href="img/sprite.svg#icon-star"></use>
+													</svg>
+													<span class="investment-projects__title">Предприятие по изготовлению упаковки для пищевой продукции</span>
+													<svg class="investment-projects__arrow">
+														<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+													</svg>
+												</a>
+											</li>
+										</ul>
+										<a href="#" class="investment-projects__btn btn btn--opacity-white">
+											<span>Смотреть все</span>
+											<svg>
 												<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
 											</svg>
 										</a>
-									</li>
-									<li class="investment-projects__item">
-										<a href="#" class="investment-projects__link">
-											<svg class="investment-projects__icon">
-												<use xlink:href="img/sprite.svg#icon-star"></use>
-											</svg>
-											<span class="investment-projects__title">Предприятие по изготовлению упаковки для пищевой продукции</span>
-											<svg class="investment-projects__arrow">
-												<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-											</svg>
-										</a>
-									</li>
-								</ul>
-								<a href="#" class="investment-projects__btn btn btn--opacity-white">
-									<span>Смотреть все</span>
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-									</svg>
-								</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- end of key industries -->
+			</section>
+			<!-- end of page top -->
 			<!-- numbers -->
 			<div class="numbers" id="numbers">
 				<div class="container">
