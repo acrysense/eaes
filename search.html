@@ -128,11 +128,138 @@
 										</svg>
 									</button>
 								</form>
+								<div class="select-box select-box--single search__select search__select--mobile">
+									<div class="select-box__container">
+										<div class="select-box__wrap">
+											<div class="select-box__scroll">
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="search-select-01" name="search-select" checked>
+													<label for="search-select-01" class="select-box__label">
+														<span class="select-box__title">Новости</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="search-select-02" name="search-select">
+													<label for="search-select-02" class="select-box__label">
+														<span class="select-box__title">Проекты</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="search-select-03" name="search-select">
+													<label for="search-select-03" class="select-box__label">
+														<span class="select-box__title">Мероприятия</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="search-select-04" name="search-select">
+													<label for="search-select-04" class="select-box__label">
+														<span class="select-box__title">Везде</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="select-box__selected">
+										<span class="select-box__placeholder select-box__placeholder--active">Раздел поиска</span>
+										<span class="select-box__values"></span>
+									</div>
+								</div>
 								<span class="search__results">1134 результата</span>
+							</div>
+							<div class="search__wrapper">
+								<a href="#" class="search__item">
+									<svg class="search__icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-decor"></use>
+									</svg>
+									<picture class="search__img">
+										<img src="img/news-01.jpg" alt="Image">
+									</picture>
+									<div class="search__body">
+										<div class="search__tags">
+											<span class="search__tag search__tag--orange">Россия</span>
+											<span class="search__tag search__tag--pink">Сибирь</span>
+										</div>
+										<span class="search__title">Безработица в ЕАЭС сократилась на 22,6% в августе 2022 года</span>
+										<span class="search__help">11 октября 2022</span>
+									</div>
+									<div class="search__details">
+										<span class="search__value">12</span>
+										<div class="search__group">
+											<span class="search__text">октября</span>
+											<span class="search__text">2022</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="search__item">
+									<svg class="search__icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-decor"></use>
+									</svg>
+									<div class="search__body">
+										<span class="search__title">Принят перечень продукции с кодами ТН ВЭД ЕАЭС к техническому регламенту «О безопасности мяса и мясной продукции»</span>
+									</div>
+								</a>
+								<a href="#" class="search__item">
+									<svg class="search__icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-decor"></use>
+									</svg>
+									<picture class="search__img">
+										<img src="img/news-02.jpg" alt="Image">
+									</picture>
+									<div class="search__body">
+										<div class="search__tags">
+											<span class="search__tag search__tag--orange">Россия</span>
+											<span class="search__tag search__tag--pink">Сибирь</span>
+											<span class="search__tag">Малый бизнес</span>
+										</div>
+										<span class="search__title">Производство крахмала и патоки</span>
+										<span class="search__help">Кореновский, г. Кореновск, 0,5 км. на юго-запад от перекрестка дорог Кореновск-Южный</span>
+									</div>
+									<div class="search__details">
+										<span class="search__number">12</span>
+										<div class="search__group">
+											<span class="search__text">млн. руб.</span>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="pagination search__pagination">
+								<button class="pagination__button pagination__button--prev" aria-label="Назад">
+									<svg class="pagination__button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+									</svg>
+								</button>
+								<ul class="pagination__list">
+									<li class="pagination__item">
+										<a href="#" class="pagination__button">1</a>
+									</li>
+									<li class="pagination__item pagination__item--plug">
+										<button class="pagination__button" disabled>...</button>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__button">7</a>
+									</li>
+									<li class="pagination__item pagination__item--active">
+										<a href="#" class="pagination__button">8</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__button">9</a>
+									</li>
+									<li class="pagination__item pagination__item--plug">
+										<button class="pagination__button" disabled>...</button>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__button">11</a>
+									</li>
+								</ul>
+								<button class="pagination__button pagination__button--next" aria-label="Далее">
+									<svg class="pagination__button-icon">
+										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+									</svg>
+								</button>
 							</div>
 						</div>
 						<div class="search__right">
-							<div class="select-box select-box--single mobile-filters__item">
+							<div class="select-box select-box--single search__select">
 								<div class="select-box__container">
 									<div class="select-box__wrap">
 										<div class="select-box__scroll">
@@ -169,10 +296,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="search__wrap">
-						<div class="search__left"></div>
-						<div class="search__right"></div>
 					</div>
 				</div>
 			</section>
