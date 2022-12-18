@@ -45,12 +45,34 @@
 					</div>
 					<div class="header__group">
 						<div class="c-search header__search">
-							<input type="text" class="c-search__input" placeholder="Поиск">
-							<button class="c-search__btn" aria-label="Поиск">
-								<svg class="c-search__btn-icon">
-									<use xlink:href="img/sprite.svg#icon-search"></use>
-								</svg>
-							</button>
+							<div class="c-search__controls">
+								<input type="text" class="c-search__input" placeholder="Поиск">
+								<button class="c-search__btn" aria-label="Поиск">
+									<svg class="c-search__btn-icon">
+										<use xlink:href="img/sprite.svg#icon-search"></use>
+									</svg>
+								</button>
+							</div>
+							<!-- add class 'c-search__dropdown--active' for visible -->
+							<div class="c-search__dropdown">
+								<ul class="c-search__list">
+									<li class="c-search__item">
+										<a href="#" class="c-search__link"><b>Красно</b>дарский край</a>
+									</li>
+									<li class="c-search__item">
+										<a href="#" class="c-search__link"><b>Красно</b>дар</a>
+									</li>
+									<li class="c-search__item">
+										<a href="#" class="c-search__link">В <b>Красно</b>даре построили новый аэропорт</a>
+									</li>
+								</ul>
+								<a href="#" class="c-search__view-all">
+									<span>Смотреть все результаты</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+									</svg>
+								</a>
+							</div>
 						</div>
 						<button class="c-language header__language">
 							<span class="c-language__value c-language__value--active">EN</span>
@@ -66,6 +88,45 @@
 			</div>
 		</header>
 		<!-- end of header -->
+		<!-- mobile search -->
+		<div class="mobile-search" id="mobile-search">
+			<div class="mobile-search__inner">
+				<div class="mobile-search__controls">
+					<input type="text" class="mobile-search__input" placeholder="Поиск">
+					<button class="mobile-search__btn" aria-label="Поиск">
+						<svg class="mobile-search__btn-icon">
+							<use xlink:href="img/sprite.svg#icon-search"></use>
+						</svg>
+					</button>
+				</div>
+				<button class="mobile-search__close">
+					<svg class="mobile-search__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+			<!-- add class 'mobile-search__dropdown--active' for visible -->
+			<div class="mobile-search__dropdown">
+				<ul class="mobile-search__list">
+					<li class="mobile-search__item">
+						<a href="#" class="mobile-search__link"><b>Красно</b>дарский край</a>
+					</li>
+					<li class="mobile-search__item">
+						<a href="#" class="mobile-search__link"><b>Красно</b>дар</a>
+					</li>
+					<li class="mobile-search__item">
+						<a href="#" class="mobile-search__link">В <b>Красно</b>даре построили новый аэропорт</a>
+					</li>
+				</ul>
+				<a href="#" class="mobile-search__view-all">
+					<span>Смотреть все результаты</span>
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<!-- end of mobile search -->
 		<!-- mobile menu -->
 		<div class="mobile-menu" id="mobile-menu">
 			<nav class="nav mobile-menu__nav">
@@ -253,12 +314,34 @@
 								</picture>
 							</div>
 							<div class="c-search c-search--mobile-active section-top__search">
-								<input type="text" class="c-search__input" placeholder="Поиск">
-								<button class="c-search__btn" aria-label="Поиск">
-									<svg class="c-search__btn-icon">
-										<use xlink:href="img/sprite.svg#icon-search"></use>
-									</svg>
-								</button>
+								<div class="c-search__controls">
+									<input type="text" class="c-search__input" placeholder="Поиск">
+									<button class="c-search__btn" aria-label="Поиск">
+										<svg class="c-search__btn-icon">
+											<use xlink:href="img/sprite.svg#icon-search"></use>
+										</svg>
+									</button>
+								</div>
+								<!-- add class 'c-search__dropdown--active' for visible -->
+								<div class="c-search__dropdown">
+									<ul class="c-search__list">
+										<li class="c-search__item">
+											<a href="#" class="c-search__link"><b>Красно</b>дарский край</a>
+										</li>
+										<li class="c-search__item">
+											<a href="#" class="c-search__link"><b>Красно</b>дар</a>
+										</li>
+										<li class="c-search__item">
+											<a href="#" class="c-search__link">В <b>Красно</b>даре построили новый аэропорт</a>
+										</li>
+									</ul>
+									<a href="#" class="c-search__view-all">
+										<span>Смотреть все результаты</span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+										</svg>
+									</a>
+								</div>
 							</div>
 						</div>
 						<div class="section-top__inner">
@@ -514,12 +597,34 @@
 									</picture>
 								</div>
 								<div class="c-search c-search--mobile-active section-top__search">
-									<input type="text" class="c-search__input" placeholder="Поиск">
-									<button class="c-search__btn" aria-label="Поиск">
-										<svg class="c-search__btn-icon">
-											<use xlink:href="img/sprite.svg#icon-search"></use>
-										</svg>
-									</button>
+									<div class="c-search__controls">
+										<input type="text" class="c-search__input" placeholder="Поиск">
+										<button class="c-search__btn" aria-label="Поиск">
+											<svg class="c-search__btn-icon">
+												<use xlink:href="img/sprite.svg#icon-search"></use>
+											</svg>
+										</button>
+									</div>
+									<!-- add class 'c-search__dropdown--active' for visible -->
+									<div class="c-search__dropdown">
+										<ul class="c-search__list">
+											<li class="c-search__item">
+												<a href="#" class="c-search__link"><b>Красно</b>дарский край</a>
+											</li>
+											<li class="c-search__item">
+												<a href="#" class="c-search__link"><b>Красно</b>дар</a>
+											</li>
+											<li class="c-search__item">
+												<a href="#" class="c-search__link">В <b>Красно</b>даре построили новый аэропорт</a>
+											</li>
+										</ul>
+										<a href="#" class="c-search__view-all">
+											<span>Смотреть все результаты</span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+											</svg>
+										</a>
+									</div>
 								</div>
 							</div>
 							<div class="section-top__inner">

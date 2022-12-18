@@ -45,12 +45,34 @@
 					</div>
 					<div class="header__group">
 						<div class="c-search header__search">
-							<input type="text" class="c-search__input" placeholder="Поиск">
-							<button class="c-search__btn" aria-label="Поиск">
-								<svg class="c-search__btn-icon">
-									<use xlink:href="img/sprite.svg#icon-search"></use>
-								</svg>
-							</button>
+							<div class="c-search__controls">
+								<input type="text" class="c-search__input" placeholder="Поиск">
+								<button class="c-search__btn" aria-label="Поиск">
+									<svg class="c-search__btn-icon">
+										<use xlink:href="img/sprite.svg#icon-search"></use>
+									</svg>
+								</button>
+							</div>
+							<!-- add class 'c-search__dropdown--active' for visible -->
+							<div class="c-search__dropdown">
+								<ul class="c-search__list">
+									<li class="c-search__item">
+										<a href="#" class="c-search__link"><b>Красно</b>дарский край</a>
+									</li>
+									<li class="c-search__item">
+										<a href="#" class="c-search__link"><b>Красно</b>дар</a>
+									</li>
+									<li class="c-search__item">
+										<a href="#" class="c-search__link">В <b>Красно</b>даре построили новый аэропорт</a>
+									</li>
+								</ul>
+								<a href="#" class="c-search__view-all">
+									<span>Смотреть все результаты</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+									</svg>
+								</a>
+							</div>
 						</div>
 						<button class="c-language header__language">
 							<span class="c-language__value c-language__value--active">EN</span>
