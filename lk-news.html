@@ -78,6 +78,44 @@
 							<span class="c-language__value c-language__value--active">EN</span>
 							<span class="c-language__value">RU</span>
 						</button>
+						<div class="c-login header__login">
+							<a href="sign-in.html" class="c-login__auth is--hidden">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-user"></use>
+								</svg>
+							</a>
+							<button class="c-login__trigger">
+								<img src="img/user-ava.jpg" alt="Ava">
+							</button>
+							<div class="c-login__dropdown">
+								<ul class="c-login__list">
+									<li class="c-login__item">
+										<a href="lk-profile.html" class="c-login__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-user"></use>
+											</svg>
+											<span>Мой профиль</span>
+										</a>
+									</li>
+									<li class="c-login__item">
+										<a href="lk-favorites.html" class="c-login__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-star-color"></use>
+											</svg>
+											<span>Избранное</span>
+										</a>
+									</li>
+									<li class="c-login__item">
+										<a href="#" class="c-login__link c-login__link--red">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-exit"></use>
+											</svg>
+											<span>Выйти</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 						<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
 							<span class="hamburger__inner"></span>
 							<span class="hamburger__inner"></span>
@@ -93,16 +131,25 @@
 			<nav class="nav mobile-menu__nav">
 				<ul class="nav__list">
 					<li class="nav__item">
-						<a href="#" class="nav__link">О ЕАЭС</a>
+						<a href="about.html" class="nav__link">О ЕАЭС</a>
 					</li>
 					<li class="nav__item">
 						<a href="#" class="nav__link">Возможности ЕАЭС <br>для бизнеса</a>
 					</li>
 					<li class="nav__item">
-						<a href="#" class="nav__link">регионы</a>
+						<a href="#" class="nav__link">Регионы</a>
 					</li>
 					<li class="nav__item">
-						<a href="#" class="nav__link">инвестиционная карта</a>
+						<a href="#" class="nav__link">Инвестиционная карта</a>
+					</li>
+					<li class="nav__item nav__item--mobile">
+						<a href="sign-in.html" class="nav__link">Личный кабинет</a>
+					</li>
+					<li class="nav__item nav__item--mobile">
+						<a href="lk-profile.html" class="nav__link">Мой профиль</a>
+					</li>
+					<li class="nav__item nav__item--mobile">
+						<a href="#" class="nav__link nav__link--red">Выйти</a>
 					</li>
 				</ul>
 			</nav>
