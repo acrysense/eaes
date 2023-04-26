@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Портал по межрегиональному сотрудничеству - Регистрация</title>
+	<title>Портал по межрегиональному сотрудничеству - Редактировать проект</title>
 	<meta property="og:title" content="Word Finder">
 	<meta property="og:description" content="Description">
 	<meta property="og:url" content="/">
@@ -130,76 +130,114 @@
 							<li class="breadcrumb__item">
 								<a href="lk.html" class="breadcrumb__link">Личный кабинет</a>
 							</li>
+							<li class="breadcrumb__item">
+								<a href="lk-projects.html" class="breadcrumb__link">Проекты</a>
+							</li>
+							<li class="breadcrumb__item">
+								<a href="lk-news-edit.html" class="breadcrumb__link">Редактировать проект</a>
+							</li>
 						</ol>
 					</nav>
-					<h1 class="page-top__heading">Личный кабинет</h1>
+					<a href="lk-projects.html" class="page-top__back btn btn--opacity-blue">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+						</svg>
+						<span>Назад к списку проектов</span>
+					</a>
 				</div>
 			</section>
 			<!-- end of page top -->
-			<!-- auth -->
-			<div class="auth" id="auth">
+			<!-- lk -->
+			<div class="lk" id="lk">
 				<div class="container">
-					<div class="auth__wrapper">
-						<div class="auth__top">
-							<div class="auth__inner">
-								<h2 class="auth__heading">Регистрация</h2>
-								<a href="sign-in.html" class="auth__btn btn btn--opacity-blue">
-									<span>Авторизация</span>
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
-									</svg>
-								</a>
+					<div class="lk__wrapper lk__wrapper--md">
+						<h2 class="lk__heading">Редактировать проект</h2>
+						<p class="lk__description">
+							<b>Последнее изменение:</b>
+							<span>11 октября 2022</span>
+						</p>
+						<div class="c-notification lk__notification">
+							<span class="c-notification__status c-notification__status--error">Отклонено</span>
+							<div class="c-notification__wrapper">
+								<h3 class="c-notification__title">
+									<b>Комментарий:</b>
+									<span>комментарий от модератора.</span>
+								</h3>
 							</div>
-							<p class="auth__help">* поля, обязательные для заполнения</p>
 						</div>
-						<form action="#" class="auth-form auth__form">
-							<div class="auth-form__section">
-								<h3 class="auth-form__title">Личные данные</h3>
-								<div class="auth-form__row">
-									<div class="auth-form__row-item">
-										<div class="input-group auth-form__input">
-											<input type="text" class="input-group__input" id="sign-up-surname" placeholder="Фамилия *">
-											<label for="sign-up-surname" class="input-group__label">Фамилия *</label>
-										</div>
+						<form action="#" class="lk-form lk__form">
+							<div class="lk-form__block">
+								<div class="lk-form__column">
+									<div class="input-group lk-form__input">
+										<input type="text" class="input-group__input" id="add-title" placeholder="Заголовок" value="Длинный заголовок">
+										<label for="add-title" class="input-group__label">Заголовок</label>
 									</div>
-									<div class="auth-form__row-item">
-										<div class="input-group auth-form__input">
-											<input type="text" class="input-group__input" id="sign-up-address" placeholder="Адрес">
-											<label for="sign-up-address" class="input-group__label">Адрес</label>
-										</div>
-									</div>
-									<div class="auth-form__row-item">
-										<div class="input-group auth-form__input">
-											<input type="text" class="input-group__input" id="sign-up-name" placeholder="Имя *">
-											<label for="sign-up-name" class="input-group__label">Имя *</label>
-										</div>
-									</div>
-									<div class="auth-form__row-item">
-										<div class="select-box select-box--single auth-form__select">
+								</div>
+								<div class="lk-form__row">
+									<div class="lk-form__row-item">
+										<div class="select-box select-box--single lk-form__select">
 											<div class="select-box__container">
 												<div class="select-box__wrap">
 													<div class="select-box__scroll">
 														<div class="select-box__option">
-															<input type="radio" class="select-box__radio" id="sign-up-country-01" name="sign-up-country">
-															<label for="sign-up-country-01" class="select-box__label">
+															<input type="radio" class="select-box__radio" id="add-type-project-01" name="add-type-project">
+															<label for="add-type-project-01" class="select-box__label">
+																<span class="select-box__title">Тип проекта 1</span>
+															</label>
+														</div>
+														<div class="select-box__option">
+															<input type="radio" class="select-box__radio" id="add-type-project-02" name="add-type-project">
+															<label for="add-type-project-02" class="select-box__label">
+																<span class="select-box__title">Тип проекта 2</span>
+															</label>
+														</div>
+														<div class="select-box__option">
+															<input type="radio" class="select-box__radio" id="add-type-project-03" name="add-type-project">
+															<label for="add-type-project-03" class="select-box__label">
+																<span class="select-box__title">Тип проекта 3</span>
+															</label>
+														</div>
+														<div class="select-box__option">
+															<input type="radio" class="select-box__radio" id="add-type-project-04" name="add-type-project">
+															<label for="add-type-project-04" class="select-box__label">
+																<span class="select-box__title">Тип проекта 4</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="select-box__selected">
+												<span class="select-box__placeholder select-box__placeholder--active">Инвестпроект</span>
+												<span class="select-box__values"></span>
+											</div>
+										</div>
+									</div>
+									<div class="lk-form__row-item">
+										<div class="select-box select-box--single lk-form__select">
+											<div class="select-box__container">
+												<div class="select-box__wrap">
+													<div class="select-box__scroll">
+														<div class="select-box__option">
+															<input type="radio" class="select-box__radio" id="add-country-01" name="add-country">
+															<label for="add-country-01" class="select-box__label">
 																<span class="select-box__title">Страна 1</span>
 															</label>
 														</div>
 														<div class="select-box__option">
-															<input type="radio" class="select-box__radio" id="sign-up-country-02" name="sign-up-country">
-															<label for="sign-up-country-02" class="select-box__label">
+															<input type="radio" class="select-box__radio" id="add-country-02" name="add-country">
+															<label for="add-country-02" class="select-box__label">
 																<span class="select-box__title">Страна 2</span>
 															</label>
 														</div>
 														<div class="select-box__option">
-															<input type="radio" class="select-box__radio" id="sign-up-country-03" name="sign-up-country">
-															<label for="sign-up-country-03" class="select-box__label">
+															<input type="radio" class="select-box__radio" id="add-country-03" name="add-country">
+															<label for="add-country-03" class="select-box__label">
 																<span class="select-box__title">Страна 3</span>
 															</label>
 														</div>
 														<div class="select-box__option">
-															<input type="radio" class="select-box__radio" id="sign-up-country-04" name="sign-up-country">
-															<label for="sign-up-country-04" class="select-box__label">
+															<input type="radio" class="select-box__radio" id="add-country-04" name="add-country">
+															<label for="add-country-04" class="select-box__label">
 																<span class="select-box__title">Страна 4</span>
 															</label>
 														</div>
@@ -207,43 +245,75 @@
 												</div>
 											</div>
 											<div class="select-box__selected">
-												<span class="select-box__placeholder select-box__placeholder--active">Страна</span>
+												<span class="select-box__placeholder select-box__placeholder--active">Россия</span>
 												<span class="select-box__values"></span>
 											</div>
 										</div>
 									</div>
-									<div class="auth-form__row-item">
-										<div class="input-group auth-form__input">
-											<input type="text" class="input-group__input" id="sign-up-last-name" placeholder="Отчество *">
-											<label for="sign-up-last-name" class="input-group__label">Отчество *</label>
-										</div>
-									</div>
-									<div class="auth-form__row-item">
-										<div class="select-box select-box--single auth-form__select">
+									<div class="lk-form__row-item">
+										<div class="select-box select-box--single lk-form__select">
 											<div class="select-box__container">
 												<div class="select-box__wrap">
 													<div class="select-box__scroll">
 														<div class="select-box__option">
-															<input type="radio" class="select-box__radio" id="sign-up-region-01" name="sign-up-region">
-															<label for="sign-up-region-01" class="select-box__label">
+															<input type="radio" class="select-box__radio" id="add-business-category-01" name="add-business-categories">
+															<label for="add-business-category-01" class="select-box__label">
+																<span class="select-box__title">Категория бизнеса 1</span>
+															</label>
+														</div>
+														<div class="select-box__option">
+															<input type="radio" class="select-box__radio" id="add-business-category-02" name="add-business-categories">
+															<label for="add-business-category-02" class="select-box__label">
+																<span class="select-box__title">Категория бизнеса 2</span>
+															</label>
+														</div>
+														<div class="select-box__option">
+															<input type="radio" class="select-box__radio" id="add-business-category-03" name="add-business-categories">
+															<label for="add-business-category-03" class="select-box__label">
+																<span class="select-box__title">Категория бизнеса 3</span>
+															</label>
+														</div>
+														<div class="select-box__option">
+															<input type="radio" class="select-box__radio" id="add-business-category-04" name="add-business-categories">
+															<label for="add-business-category-04" class="select-box__label">
+																<span class="select-box__title">Категория бизнеса 4</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="select-box__selected">
+												<span class="select-box__placeholder select-box__placeholder--active">Категория бизнеса</span>
+												<span class="select-box__values"></span>
+											</div>
+										</div>
+									</div>
+									<div class="lk-form__row-item">
+										<div class="select-box select-box--single lk-form__select">
+											<div class="select-box__container">
+												<div class="select-box__wrap">
+													<div class="select-box__scroll">
+														<div class="select-box__option">
+															<input type="radio" class="select-box__radio" id="add-region-01" name="add-region">
+															<label for="add-region-01" class="select-box__label">
 																<span class="select-box__title">Регион 1</span>
 															</label>
 														</div>
 														<div class="select-box__option">
-															<input type="radio" class="select-box__radio" id="sign-up-region-02" name="sign-up-region">
-															<label for="sign-up-region-02" class="select-box__label">
+															<input type="radio" class="select-box__radio" id="add-region-02" name="add-region">
+															<label for="add-region-02" class="select-box__label">
 																<span class="select-box__title">Регион 2</span>
 															</label>
 														</div>
 														<div class="select-box__option">
-															<input type="radio" class="select-box__radio" id="sign-up-region-03" name="sign-up-region">
-															<label for="sign-up-region-03" class="select-box__label">
+															<input type="radio" class="select-box__radio" id="add-region-03" name="add-region">
+															<label for="add-region-03" class="select-box__label">
 																<span class="select-box__title">Регион 3</span>
 															</label>
 														</div>
 														<div class="select-box__option">
-															<input type="radio" class="select-box__radio" id="sign-up-region-04" name="sign-up-region">
-															<label for="sign-up-region-04" class="select-box__label">
+															<input type="radio" class="select-box__radio" id="add-region-04" name="add-region">
+															<label for="add-region-04" class="select-box__label">
 																<span class="select-box__title">Регион 4</span>
 															</label>
 														</div>
@@ -251,134 +321,75 @@
 												</div>
 											</div>
 											<div class="select-box__selected">
-												<span class="select-box__placeholder select-box__placeholder--active">Регион</span>
+												<span class="select-box__placeholder select-box__placeholder--active">Краснодарский край</span>
 												<span class="select-box__values"></span>
 											</div>
 										</div>
 									</div>
-									<div class="auth-form__row-item">
-										<div class="input-group auth-form__input">
-											<input type="email" class="input-group__input" id="sign-up-email" placeholder="Адрес электронной почты *">
-											<label for="sign-up-email" class="input-group__label">Адрес электронной почты *</label>
-										</div>
-									</div>
-									<div class="auth-form__row-item">
-										<div class="select-box select-box--single auth-form__select">
+									<div class="lk-form__row-item">
+										<div class="select-box select-box--single lk-form__select">
 											<div class="select-box__container">
 												<div class="select-box__wrap">
 													<div class="select-box__scroll">
 														<div class="select-box__option">
-															<input type="radio" class="select-box__radio" id="sign-up-category-01" name="sign-up-category">
-															<label for="sign-up-category-01" class="select-box__label">
-																<span class="select-box__title">Категория 1</span>
+															<input type="radio" class="select-box__radio" id="add-stage-01" name="add-stage">
+															<label for="add-stage-01" class="select-box__label">
+																<span class="select-box__title">Стадия проекта 1</span>
 															</label>
 														</div>
 														<div class="select-box__option">
-															<input type="radio" class="select-box__radio" id="sign-up-category-02" name="sign-up-category">
-															<label for="sign-up-category-02" class="select-box__label">
-																<span class="select-box__title">Категория 2</span>
+															<input type="radio" class="select-box__radio" id="add-stage-02" name="add-stage">
+															<label for="add-stage-02" class="select-box__label">
+																<span class="select-box__title">Стадия проекта 2</span>
 															</label>
 														</div>
 														<div class="select-box__option">
-															<input type="radio" class="select-box__radio" id="sign-up-category-03" name="sign-up-category">
-															<label for="sign-up-category-03" class="select-box__label">
-																<span class="select-box__title">Категория 3</span>
+															<input type="radio" class="select-box__radio" id="add-stage-03" name="add-stage">
+															<label for="add-stage-03" class="select-box__label">
+																<span class="select-box__title">Стадия проекта 3</span>
 															</label>
 														</div>
 														<div class="select-box__option">
-															<input type="radio" class="select-box__radio" id="sign-up-category-04" name="sign-up-category">
-															<label for="sign-up-category-04" class="select-box__label">
-																<span class="select-box__title">Категория 4</span>
+															<input type="radio" class="select-box__radio" id="add-stage-04" name="add-stage">
+															<label for="add-stage-04" class="select-box__label">
+																<span class="select-box__title">Стадия проекта 4</span>
 															</label>
 														</div>
 													</div>
 												</div>
 											</div>
 											<div class="select-box__selected">
-												<span class="select-box__placeholder select-box__placeholder--active">Категория пользователя</span>
+												<span class="select-box__placeholder select-box__placeholder--active">Гринфилд</span>
 												<span class="select-box__values"></span>
 											</div>
 										</div>
 									</div>
-									<div class="auth-form__row-item">
-										<div class="input-group auth-form__input">
-											<input type="tel" class="input-group__input" id="sign-up-phone" placeholder="Контактный телефон *">
-											<label for="sign-up-phone" class="input-group__label">Контактный телефон *</label>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="auth-form__section">
-								<h3 class="auth-form__title">Данные организации</h3>
-								<div class="auth-form__row">
-									<div class="auth-form__row-item">
-										<div class="input-group auth-form__input">
-											<input type="text" class="input-group__input" id="sign-up-organization" placeholder="Организация">
-											<label for="sign-up-organization" class="input-group__label">Организация</label>
-										</div>
-									</div>
-									<div class="auth-form__row-item">
-										<div class="input-group auth-form__input">
-											<input type="tel" class="input-group__input" id="sign-up-organization-phone" placeholder="Телефон Организации">
-											<label for="sign-up-organization-phone" class="input-group__label">Телефон Организации</label>
-										</div>
-									</div>
-									<div class="auth-form__row-item">
-										<div class="input-group auth-form__input">
-											<input type="text" class="input-group__input" id="sign-up-organization-inn" placeholder="ИНН">
-											<label for="sign-up-organization-inn" class="input-group__label">ИНН</label>
-										</div>
-									</div>
-									<div class="auth-form__row-item">
-										<div class="input-group auth-form__input">
-											<input type="email" class="input-group__input" id="sign-up-organization-email" placeholder="Email Организации">
-											<label for="sign-up-organization-email" class="input-group__label">Email Организации</label>
-										</div>
-									</div>
-									<div class="auth-form__row-item">
-										<div class="input-group auth-form__input">
-											<input type="text" class="input-group__input" id="sign-up-organization-kpp" placeholder="КПП">
-											<label for="sign-up-organization-kpp" class="input-group__label">КПП</label>
-										</div>
-									</div>
-									<div class="auth-form__row-item">
-										<div class="input-group auth-form__input">
-											<input type="text" class="input-group__input" id="sign-up-organization-address" placeholder="Адрес организации (включая страну и город)">
-											<label for="sign-up-organization-address" class="input-group__label">Адрес организации (включая страну и город)</label>
-										</div>
-									</div>
-									<div class="auth-form__row-item">
-										<div class="input-group auth-form__input">
-											<input type="text" class="input-group__input" id="sign-up-organization-site" placeholder="Сайт">
-											<label for="sign-up-organization-site" class="input-group__label">Сайт</label>
-										</div>
-									</div>
-									<div class="auth-form__row-item">
-										<div class="select-box select-box--single auth-form__select">
+									<div class="lk-form__row-item">
+										<div class="select-box select-box--single lk-form__select">
 											<div class="select-box__container">
 												<div class="select-box__wrap">
 													<div class="select-box__scroll">
 														<div class="select-box__option">
-															<input type="radio" class="select-box__radio" id="sign-up-industry-01" name="sign-up-industry">
-															<label for="sign-up-industry-01" class="select-box__label">
+															<input type="radio" class="select-box__radio" id="add-industry-01" name="add-industry">
+															<label for="add-industry-01" class="select-box__label">
 																<span class="select-box__title">Отрасль 1</span>
 															</label>
 														</div>
 														<div class="select-box__option">
-															<input type="radio" class="select-box__radio" id="sign-up-industry-02" name="sign-up-industry">
-															<label for="sign-up-industry-02" class="select-box__label">
+															<input type="radio" class="select-box__radio" id="add-industry-02" name="add-industry">
+															<label for="add-industry-02" class="select-box__label">
 																<span class="select-box__title">Отрасль 2</span>
 															</label>
 														</div>
 														<div class="select-box__option">
-															<input type="radio" class="select-box__radio" id="sign-up-industry-03" name="sign-up-industry">
-															<label for="sign-up-industry-03" class="select-box__label">
+															<input type="radio" class="select-box__radio" id="add-industry-03" name="add-industry">
+															<label for="add-industry-03" class="select-box__label">
 																<span class="select-box__title">Отрасль 3</span>
 															</label>
 														</div>
 														<div class="select-box__option">
-															<input type="radio" class="select-box__radio" id="sign-up-industry-04" name="sign-up-industry">
-															<label for="sign-up-industry-04" class="select-box__label">
+															<input type="radio" class="select-box__radio" id="add-industry-04" name="add-industry">
+															<label for="add-industry-04" class="select-box__label">
 																<span class="select-box__title">Отрасль 4</span>
 															</label>
 														</div>
@@ -386,58 +397,103 @@
 												</div>
 											</div>
 											<div class="select-box__selected">
-												<span class="select-box__placeholder select-box__placeholder--active">Отрасль</span>
+												<span class="select-box__placeholder select-box__placeholder--active">Недвижимость</span>
 												<span class="select-box__values"></span>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="auth-form__column">
-									<div class="input-group auth-form__input">
-										<textarea id="sign-up-organization-info" class="input-group__textarea" placeholder="Информация, не более 400 символов"></textarea>
-										<label for="sign-up-organization-info" class="input-group__label">Информация, не более 400 символов</label>
+								<div class="lk-form__column">
+									<div class="input-group lk-form__input">
+										<input type="text" class="input-group__input" id="add-product" placeholder="Основной продукт" value="Информация о продукте">
+										<label for="add-product" class="input-group__label">Основной продукт</label>
+									</div>
+									<div class="input-group lk-form__input">
+										<input type="text" class="input-group__input" id="add-volumes" placeholder="Объемы производства (предполагаемые)" value="Информация об объемах">
+										<label for="add-volumes" class="input-group__label">Объемы производства (предполагаемые)</label>
+									</div>
+									<div class="input-group lk-form__input">
+										<input type="text" class="input-group__input" id="add-cooperative" placeholder="Кооперация с компаниями из ЕАЭС" value="Информация о кооперации">
+										<label for="add-cooperative" class="input-group__label">Кооперация с компаниями из ЕАЭС</label>
+									</div>
+									<div class="input-group lk-form__input">
+										<input type="text" class="input-group__input" id="add-export" placeholder="Возможности для экспорта в ЕАЭС, третьи страны, кооперации" value="Информация о возможностях">
+										<label for="add-export" class="input-group__label">Возможности для экспорта в ЕАЭС, третьи страны, кооперации</label>
+									</div>
+									<div class="input-group lk-form__input">
+										<input type="text" class="input-group__input" id="add-privileges" placeholder="Используемые/предполагаемые инвестиционные льготы, государственная поддержка, кредиты" value="Информация о льготах">
+										<label for="add-privileges" class="input-group__label">Используемые/предполагаемые инвестиционные льготы, государственная поддержка, кредиты</label>
+									</div>
+									<div class="input-group lk-form__input">
+										<input type="text" class="input-group__input" id="add-price" placeholder="Общая инвестиционная стоимость проекта" value="12 млн. руб.">
+										<label for="add-price" class="input-group__label">Общая инвестиционная стоимость проекта</label>
+									</div>
+									<div class="input-group lk-form__input">
+										<input type="text" class="input-group__input" id="add-investments" placeholder="Требуемая сумма инвестиций, с указанием уже привлеченных средств, сроки запуска и окупаемости" value="5 млн. руб.">
+										<label for="add-investments" class="input-group__label">Требуемая сумма инвестиций, с указанием уже привлеченных средств, сроки запуска и окупаемости</label>
+									</div>
+									<div class="input-group lk-form__input">
+										<input type="text" class="input-group__input" id="add-participants" placeholder="Участники проекта" value="Список участников">
+										<label for="add-participants" class="input-group__label">Участники проекта</label>
 									</div>
 								</div>
 							</div>
-							<div class="auth-form__section">
-								<div class="auth-form__row">
-									<div class="auth-form__row-item">
-										<div class="input-group auth-form__input">
-											<input type="password" class="input-group__input" id="sign-up-password" placeholder="Пароль *">
-											<label for="sign-up-password" class="input-group__label">Пароль *</label>
+							<div class="lk-form__block">
+								<h3 class="lk-form__title">Контакт</h3>
+								<div class="lk-form__row">
+									<div class="lk-form__row-item">
+										<div class="input-group lk-form__input">
+											<input type="text" class="input-group__input" id="add-name" placeholder="Имя" value="Иван">
+											<label for="add-name" class="input-group__label">Имя</label>
 										</div>
 									</div>
-									<div class="auth-form__row-item"></div>
-									<div class="auth-form__row-item">
-										<div class="input-group auth-form__input">
-											<input type="password" class="input-group__input" id="sign-up-password-confirm" placeholder="Пароль повторно *">
-											<label for="sign-up-password-confirm" class="input-group__label">Пароль повторно *</label>
+									<div class="lk-form__row-item">
+										<div class="input-group lk-form__input">
+											<input type="text" class="input-group__input" id="add-organization" placeholder="Организация" value="ООО Ромашка">
+											<label for="add-organization" class="input-group__label">Организация</label>
 										</div>
 									</div>
-									<div class="auth-form__row-item"></div>
-								</div>
-							</div>
-							<div class="auth-form__section">
-								<div class="square-checkbox auth-form__checkbox">
-									<label for="sign-up-checkbox" class="square-checkbox__item">
-										<input type="checkbox" id="sign-up-checkbox" class="square-checkbox__input" checked>
-										<div class="square-checkbox__group">
-											<span class="square-checkbox__icon"></span>
-											<span class="square-checkbox__title">Настоящим даю согласие на сбор, анализ и обработку персональных данных.</span>
+									<div class="lk-form__row-item">
+										<div class="input-group lk-form__input">
+											<input type="text" class="input-group__input" id="add-position" placeholder="Должность" value="Директор">
+											<label for="add-position" class="input-group__label">Должность</label>
 										</div>
-									</label>
+									</div>
+									<div class="lk-form__row-item">
+										<div class="input-group lk-form__input">
+											<input type="tel" class="input-group__input" id="add-phone" placeholder="Телефон" value="+7 901 123-45-67">
+											<label for="add-phone" class="input-group__label">Телефон</label>
+										</div>
+									</div>
+									<div class="lk-form__row-item">
+										<div class="input-group lk-form__input">
+											<input type="email" class="input-group__input" id="add-email" placeholder="Адрес электронной почты" value="mail@gmail.com">
+											<label for="add-email" class="input-group__label">Адрес электронной почты</label>
+										</div>
+									</div>
+									<div class="lk-form__row-item">
+										<div class="input-group lk-form__input">
+											<input type="text" class="input-group__input" id="add-address" placeholder="Адрес" value="г. Краснодар, улица Первая">
+											<label for="add-address" class="input-group__label">Адрес</label>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="auth-form__section">
-								<div class="auth-form__inner">
-									<button class="auth-form__btn btn">Зарегистрироваться</button>
-								</div>
+							<div class="lk-form__buttons">
+								<button class="lk-form__btn btn">Сохранить</button>
+								<button class="lk-form__btn btn btn--opacity-blue">Сохранить и опубликовать</button>
+								<button class="lk-form__btn btn btn--opacity-blue">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-eye"></use>
+									</svg>
+									<span>Предпросмотр</span>
+								</button>
 							</div>
 						</form>
 					</div>
 				</div>
 			</div>
-			<!-- end of auth -->
+			<!-- end of lk -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->

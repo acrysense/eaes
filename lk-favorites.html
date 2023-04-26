@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Портал по межрегиональному сотрудничеству - Личный кабинет</title>
+	<title>Портал по межрегиональному сотрудничеству - Избранное</title>
 	<meta property="og:title" content="Word Finder">
 	<meta property="og:description" content="Description">
 	<meta property="og:url" content="/">
@@ -130,55 +130,149 @@
 							<li class="breadcrumb__item">
 								<a href="lk.html" class="breadcrumb__link">Личный кабинет</a>
 							</li>
+							<li class="breadcrumb__item">
+								<a href="lk-favorites.html" class="breadcrumb__link">Избранное</a>
+							</li>
 						</ol>
 					</nav>
-					<h1 class="page-top__heading">Личный кабинет</h1>
+					<h1 class="page-top__heading">Избранное</h1>
 				</div>
 			</section>
 			<!-- end of page top -->
 			<!-- lk -->
 			<div class="lk" id="lk">
 				<div class="container">
-					<nav class="lk-nav">
-						<div class="lk-nav__wrapper">
-							<a href="#" class="lk-nav__item" target="_blank">
-								<svg class="lk-nav__icon">
-									<use xlink:href="img/sprite.svg#icon-lk-nav-01"></use>
-								</svg>
-								<span class="lk-nav__title">Информация о регионе</span>
-							</a>
-							<a href="lk-news.html" class="lk-nav__item" target="_blank">
-								<svg class="lk-nav__icon">
-									<use xlink:href="img/sprite.svg#icon-lk-nav-02"></use>
-								</svg>
-								<span class="lk-nav__title">Новости</span>
-							</a>
-							<a href="#" class="lk-nav__item" target="_blank">
-								<svg class="lk-nav__icon">
-									<use xlink:href="img/sprite.svg#icon-lk-nav-03"></use>
-								</svg>
-								<span class="lk-nav__title">Мероприятия</span>
-							</a>
-							<a href="lk-projects.html" class="lk-nav__item" target="_blank">
-								<svg class="lk-nav__icon">
-									<use xlink:href="img/sprite.svg#icon-lk-nav-04"></use>
-								</svg>
-								<span class="lk-nav__title">Инвестпроекты</span>
-							</a>
-							<a href="lk-appeals.html" class="lk-nav__item" target="_blank">
-								<svg class="lk-nav__icon">
-									<use xlink:href="img/sprite.svg#icon-lk-nav-05"></use>
-								</svg>
-								<span class="lk-nav__title">Обращения</span>
-							</a>
-							<a href="lk-favorites.html" class="lk-nav__item" target="_blank">
-								<svg class="lk-nav__icon">
-									<use xlink:href="img/sprite.svg#icon-lk-nav-06"></use>
-								</svg>
-								<span class="lk-nav__title">Избранное</span>
-							</a>
+					<div class="lk__sort">
+						<div class="select-box select-box--single lk__select">
+							<div class="select-box__container">
+								<div class="select-box__wrap">
+									<div class="select-box__scroll">
+										<div class="select-box__option">
+											<input type="radio" class="select-box__radio" id="lk-sort-01" name="lk-sort">
+											<label for="lk-sort-01" class="select-box__label">
+												<span class="select-box__title">Инвестпроекты</span>
+											</label>
+										</div>
+										<div class="select-box__option">
+											<input type="radio" class="select-box__radio" id="lk-sort-02" name="lk-sort">
+											<label for="lk-sort-02" class="select-box__label">
+												<span class="select-box__title">Мероприятия</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="select-box__selected">
+								<span class="select-box__placeholder select-box__placeholder--active">Новости</span>
+								<span class="select-box__values"></span>
+							</div>
 						</div>
-					</nav>
+					</div>
+					<div class="lk__wrapper">
+						<div class="lk-section">
+							<div class="lk-section__holder">
+								<div class="lk-section__item">
+									<div class="lk-section__left">
+										<picture class="lk-section__img">
+											<img src="img/news-01.jpg" alt="Image">
+										</picture>
+										<div class="lk-section__body">
+											<div class="lk-section__tags">
+												<span class="lk-section__tag lk-section__tag--orange">Россия</span>
+												<span class="lk-section__tag lk-section__tag--blue">Экономика</span>
+											</div>
+											<h3 class="lk-section__description">Безработица в ЕАЭС сократилась на 22,6% в августе 2022 года</h3>
+											<span class="lk-section__help">11 октября 2022</span>
+										</div>
+									</div>
+								</div>
+								<button class="lk-section__favorite">
+									<svg class="lk-section__favorite-icon">
+										<use xlink:href="img/sprite.svg#icon-favorite-filled"></use>
+									</svg>
+								</button>
+							</div>
+							<div class="lk-section__holder">
+								<div class="lk-section__item">
+									<div class="lk-section__left">
+										<picture class="lk-section__img">
+											<img src="img/news-01.jpg" alt="Image">
+										</picture>
+										<div class="lk-section__body">
+											<div class="lk-section__tags">
+												<span class="lk-section__tag lk-section__tag--orange">Россия</span>
+												<span class="lk-section__tag lk-section__tag--blue">Экономика</span>
+											</div>
+											<h3 class="lk-section__description">Принят перечень продукции с кодами ТН ВЭД ЕАЭС к техническому регламенту «О безопасности мяса и мясной продукции»</h3>
+											<span class="lk-section__help">11 октября 2022</span>
+										</div>
+									</div>
+								</div>
+								<button class="lk-section__favorite">
+									<svg class="lk-section__favorite-icon">
+										<use xlink:href="img/sprite.svg#icon-favorite-filled"></use>
+									</svg>
+								</button>
+							</div>
+							<div class="lk-section__holder">
+								<div class="lk-section__item">
+									<div class="lk-section__left">
+										<picture class="lk-section__img">
+											<img src="img/news-01.jpg" alt="Image">
+										</picture>
+										<div class="lk-section__body">
+											<div class="lk-section__tags">
+												<span class="lk-section__tag lk-section__tag--orange">Россия</span>
+												<span class="lk-section__tag lk-section__tag--blue">Экономика</span>
+											</div>
+											<h3 class="lk-section__description">В Евразийский сетевой университет включено еще четыре вуза из Казахстана и России</h3>
+											<span class="lk-section__help">11 октября 2022</span>
+										</div>
+									</div>
+								</div>
+								<button class="lk-section__favorite">
+									<svg class="lk-section__favorite-icon">
+										<use xlink:href="img/sprite.svg#icon-favorite-filled"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="pagination lk__pagination">
+							<button class="pagination__button pagination__button--prev" aria-label="Назад">
+								<svg class="pagination__button-icon">
+									<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+								</svg>
+							</button>
+							<ul class="pagination__list">
+								<li class="pagination__item">
+									<a href="#" class="pagination__button">1</a>
+								</li>
+								<li class="pagination__item pagination__item--plug">
+									<button class="pagination__button" disabled>...</button>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__button">7</a>
+								</li>
+								<li class="pagination__item pagination__item--active">
+									<a href="#" class="pagination__button">8</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__button">9</a>
+								</li>
+								<li class="pagination__item pagination__item--plug">
+									<button class="pagination__button" disabled>...</button>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__button">11</a>
+								</li>
+							</ul>
+							<button class="pagination__button pagination__button--next" aria-label="Далее">
+								<svg class="pagination__button-icon">
+									<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- end of lk -->

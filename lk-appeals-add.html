@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Портал по межрегиональному сотрудничеству - Личный кабинет</title>
+	<title>Портал по межрегиональному сотрудничеству - Новое обращение</title>
 	<meta property="og:title" content="Word Finder">
 	<meta property="og:description" content="Description">
 	<meta property="og:url" content="/">
@@ -130,55 +130,81 @@
 							<li class="breadcrumb__item">
 								<a href="lk.html" class="breadcrumb__link">Личный кабинет</a>
 							</li>
+							<li class="breadcrumb__item">
+								<a href="lk-appeals.html" class="breadcrumb__link">Обращения</a>
+							</li>
+							<li class="breadcrumb__item">
+								<a href="lk-appeals-add.html" class="breadcrumb__link">Новое обращение</a>
+							</li>
 						</ol>
 					</nav>
-					<h1 class="page-top__heading">Личный кабинет</h1>
+					<a href="lk-appeals.html" class="page-top__back btn btn--opacity-blue">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+						</svg>
+						<span>Назад к списку обращений</span>
+					</a>
 				</div>
 			</section>
 			<!-- end of page top -->
 			<!-- lk -->
 			<div class="lk" id="lk">
 				<div class="container">
-					<nav class="lk-nav">
-						<div class="lk-nav__wrapper">
-							<a href="#" class="lk-nav__item" target="_blank">
-								<svg class="lk-nav__icon">
-									<use xlink:href="img/sprite.svg#icon-lk-nav-01"></use>
-								</svg>
-								<span class="lk-nav__title">Информация о регионе</span>
-							</a>
-							<a href="lk-news.html" class="lk-nav__item" target="_blank">
-								<svg class="lk-nav__icon">
-									<use xlink:href="img/sprite.svg#icon-lk-nav-02"></use>
-								</svg>
-								<span class="lk-nav__title">Новости</span>
-							</a>
-							<a href="#" class="lk-nav__item" target="_blank">
-								<svg class="lk-nav__icon">
-									<use xlink:href="img/sprite.svg#icon-lk-nav-03"></use>
-								</svg>
-								<span class="lk-nav__title">Мероприятия</span>
-							</a>
-							<a href="lk-projects.html" class="lk-nav__item" target="_blank">
-								<svg class="lk-nav__icon">
-									<use xlink:href="img/sprite.svg#icon-lk-nav-04"></use>
-								</svg>
-								<span class="lk-nav__title">Инвестпроекты</span>
-							</a>
-							<a href="lk-appeals.html" class="lk-nav__item" target="_blank">
-								<svg class="lk-nav__icon">
-									<use xlink:href="img/sprite.svg#icon-lk-nav-05"></use>
-								</svg>
-								<span class="lk-nav__title">Обращения</span>
-							</a>
-							<a href="lk-favorites.html" class="lk-nav__item" target="_blank">
-								<svg class="lk-nav__icon">
-									<use xlink:href="img/sprite.svg#icon-lk-nav-06"></use>
-								</svg>
-								<span class="lk-nav__title">Избранное</span>
-							</a>
-						</div>
-					</nav>
+					<div class="lk__wrapper lk__wrapper--md">
+						<h2 class="lk__heading">Новое обращение</h2>
+						<span class="lk__help">Обязательные для заполнения разделы помечены звездочкой *</span>
+						<form action="#" class="lk-form lk__form">
+							<div class="lk-form__column">
+								<div class="select-box select-box--single lk-form__select">
+									<div class="select-box__container">
+										<div class="select-box__wrap">
+											<div class="select-box__scroll">
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="add-category-01" name="add-categories">
+													<label for="add-category-01" class="select-box__label">
+														<span class="select-box__title">Категория 1</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="add-category-02" name="add-categories">
+													<label for="add-category-02" class="select-box__label">
+														<span class="select-box__title">Категория 2</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="add-category-03" name="add-categories">
+													<label for="add-category-03" class="select-box__label">
+														<span class="select-box__title">Категория 3</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="add-category-04" name="add-categories">
+													<label for="add-category-04" class="select-box__label">
+														<span class="select-box__title">Категория 4</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="select-box__selected">
+										<span class="select-box__placeholder select-box__placeholder--active">Категория обращения</span>
+										<span class="select-box__values"></span>
+									</div>
+								</div>
+								<div class="input-group lk-form__input">
+									<input type="text" class="input-group__input" id="add-theme" placeholder="Тема обращения *">
+									<label for="add-theme" class="input-group__label">Тема обращения *</label>
+								</div>
+								<div class="input-group lk-form__input">
+									<textarea id="add-text" class="input-group__textarea" placeholder="Текст новости, не более 400 символов *"></textarea>
+									<label for="add-text" class="input-group__label">Текст новости, не более 400 символов *</label>
+								</div>
+							</div>
+							<div class="lk-form__buttons">
+								<button class="lk-form__btn btn">Создать</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 			<!-- end of lk -->
