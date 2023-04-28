@@ -202,6 +202,29 @@
 						<form action="#" class="auth-form auth__form">
 							<div class="auth-form__section">
 								<h3 class="auth-form__title">Личные данные</h3>
+								<div class="auth-form__column">
+									<div class="photo-upload">
+										<label for="upload-photo" class="photo-upload__label">
+											<input type="file" id="upload-photo" class="photo-upload__input">
+											<div class="photo-upload__preview">
+												<svg class="photo-upload__icon">
+													<use xlink:href="img/sprite.svg#icon-camera"></use>
+												</svg>
+												<span class="photo-upload__title">Фото</span>
+											</div>
+										</label>
+										<div class="photo-upload__uploaded is--hidden">
+											<picture class="photo-upload__img">
+												<img src="/" alt="Image">
+											</picture>
+											<button class="photo-upload__delete">
+												<svg class="photo-upload__delete-icon">
+													<use xlink:href="img/sprite.svg#icon-close-circle"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
 								<div class="auth-form__row">
 									<div class="auth-form__row-item">
 										<div class="input-group auth-form__input">
@@ -305,8 +328,8 @@
 									</div>
 									<div class="auth-form__row-item">
 										<div class="input-group auth-form__input">
-											<input type="email" class="input-group__input" id="sign-up-email" placeholder="Адрес электронной почты *">
-											<label for="sign-up-email" class="input-group__label">Адрес электронной почты *</label>
+											<input type="tel" class="input-group__input" id="sign-up-phone" placeholder="Контактный телефон *" data-inputmask="'mask': '+7 (999) 999-99-99'">
+											<label for="sign-up-phone" class="input-group__label">Контактный телефон *</label>
 										</div>
 									</div>
 									<div class="auth-form__row-item">
@@ -349,8 +372,8 @@
 									</div>
 									<div class="auth-form__row-item">
 										<div class="input-group auth-form__input">
-											<input type="tel" class="input-group__input" id="sign-up-phone" placeholder="Контактный телефон *">
-											<label for="sign-up-phone" class="input-group__label">Контактный телефон *</label>
+											<input type="email" class="input-group__input" id="sign-up-email" placeholder="Адрес электронной почты *">
+											<label for="sign-up-email" class="input-group__label">Адрес электронной почты *</label>
 										</div>
 									</div>
 								</div>
@@ -366,7 +389,7 @@
 									</div>
 									<div class="auth-form__row-item">
 										<div class="input-group auth-form__input">
-											<input type="tel" class="input-group__input" id="sign-up-organization-phone" placeholder="Телефон Организации">
+											<input type="tel" class="input-group__input" id="sign-up-organization-phone" placeholder="Телефон Организации" data-inputmask="'mask': '+7 (999) 999-99-99'">
 											<label for="sign-up-organization-phone" class="input-group__label">Телефон Организации</label>
 										</div>
 									</div>
