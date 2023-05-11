@@ -190,6 +190,668 @@
 				<div class="container">
 					<h2 class="lk__heading">Информация о регионе</h2>
 					<h3 class="lk__subtitle">Страница Региона разбита на разделы. Обязательные для заполнения разделы помечены звездочкой *</h3>
+					<div class="lk-regions">
+						<div class="lk-regions__wrapper">
+							<div class="lk-regions__left">
+								<div class="lk-region-settings">
+									<div class="lk-region-settings__top">
+										<div class="lk-region-settings__inner">
+											<h3 class="lk-region-settings__heading">Элемент *</h3>
+											<label for="switch-regions-01" class="switch lk-region-settings__switch">
+												<input type="checkbox" id="switch-regions-01" class="switch__input" checked>
+												<div class="switch__group">
+													<span class="switch__icon"></span>
+												</div>
+											</label>
+										</div>
+										<span class="lk-region-settings__help is--hidden">Если вы хотите, чтобы этот раздел отображался на сайте, то включите видимость этого раздела</span>
+									</div>
+									<div class="lk-region-settings__main">
+										<form action="#" class="lk-region-settings__form">
+											<div class="lk-region-settings__column">
+												<div class="photo-upload lk-region-settings__input">
+													<label for="upload-photo" class="photo-upload__label">
+														<input type="file" id="upload-photo" class="photo-upload__input">
+														<div class="photo-upload__preview">
+															<svg class="photo-upload__icon">
+																<use xlink:href="img/sprite.svg#icon-camera"></use>
+															</svg>
+															<span class="photo-upload__title">Фото-фон</span>
+														</div>
+														<span class="photo-upload__help">Размер загружаемого фото-фона не менее 1920 пикселей по ширине</span>
+													</label>
+													<div class="photo-upload__uploaded is--hidden">
+														<picture class="photo-upload__img">
+															<img src="img/uploaded-photo.jpg" alt="Image">
+														</picture>
+														<button class="photo-upload__delete">
+															<svg class="photo-upload__delete-icon">
+																<use xlink:href="img/sprite.svg#icon-close-circle"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+												<div class="input-group lk-region-settings__input">
+													<input type="text" class="input-group__input" id="lk-region-name" placeholder="Название">
+													<label for="lk-region-name" class="input-group__label">Название</label>
+												</div>
+												<div class="input-group lk-region-settings__input">
+													<textarea id="lk-region-description-element" class="input-group__textarea" placeholder="Описание (не более 400 символов)"></textarea>
+													<label for="lk-region-description-element" class="input-group__label">Описание (не более 400 символов)</label>
+												</div>
+												<div class="select-box select-box--single lk-region-settings__select">
+													<div class="select-box__container">
+														<div class="select-box__wrap">
+															<div class="select-box__scroll">
+																<div class="select-box__option">
+																	<input type="radio" class="select-box__radio" id="lk-region-01" name="lk-region">
+																	<label for="lk-region-01" class="select-box__label">
+																		<span class="select-box__title">Страна 1</span>
+																	</label>
+																</div>
+																<div class="select-box__option">
+																	<input type="radio" class="select-box__radio" id="lk-region-02" name="lk-region">
+																	<label for="lk-region-02" class="select-box__label">
+																		<span class="select-box__title">Страна 2</span>
+																	</label>
+																</div>
+																<div class="select-box__option">
+																	<input type="radio" class="select-box__radio" id="lk-region-03" name="lk-region">
+																	<label for="lk-region-03" class="select-box__label">
+																		<span class="select-box__title">Страна 3</span>
+																	</label>
+																</div>
+																<div class="select-box__option">
+																	<input type="radio" class="select-box__radio" id="lk-region-04" name="lk-region">
+																	<label for="lk-region-04" class="select-box__label">
+																		<span class="select-box__title">Страна 4</span>
+																	</label>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="select-box__selected">
+														<span class="select-box__placeholder select-box__placeholder--active">Страна</span>
+														<span class="select-box__values"></span>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="lk-regions__right">
+								<div class="lk-regions__preview">
+									<picture class="lk-regions__preview-img">
+										<img src="img/regions-preview-01.jpg" alt="Image">
+									</picture>
+									<span class="lk-regions__help">Пример отображения информации заполненного блока</span>
+								</div>
+							</div>
+						</div>
+						<div class="lk-regions__wrapper">
+							<div class="lk-regions__left">
+								<div class="lk-region-settings">
+									<div class="lk-region-settings__top">
+										<div class="lk-region-settings__inner">
+											<h3 class="lk-region-settings__heading">Ключевые отрасли</h3>
+											<label for="switch-regions-02" class="switch lk-region-settings__switch">
+												<input type="checkbox" id="switch-regions-02" class="switch__input" checked>
+												<div class="switch__group">
+													<span class="switch__icon"></span>
+												</div>
+											</label>
+										</div>
+										<span class="lk-region-settings__help is--hidden">Если вы хотите, чтобы этот раздел отображался на сайте, то включите видимость этого раздела</span>
+									</div>
+									<div class="lk-region-settings__main">
+										<div class="lk-region-settings__block">
+											<div class="lk-region-settings__group">
+												<div class="lk-region-settings__info">
+													<h3 class="lk-region-settings__title">Ключевая отрасль 1</h3>
+													<button class="lk-region-settings__delete" aria-label="Удалить">
+														<svg class="lk-region-settings__delete-icon">
+															<use xlink:href="img/sprite.svg#icon-delete"></use>
+														</svg>
+													</button>
+												</div>
+												<form action="#" class="lk-region-settings__form">
+													<div class="lk-region-settings__row">
+														<div class="lk-region-settings__row-item">
+															<div class="select-box select-box--single lk-region-settings__select">
+																<div class="select-box__container">
+																	<div class="select-box__wrap">
+																		<div class="select-box__scroll">
+																			<div class="select-box__option">
+																				<input type="radio" class="select-box__radio" id="lk-region-industry-01" name="lk-region-industry">
+																				<label for="lk-region-industry-01" class="select-box__label">
+																					<span class="select-box__title">Иконка отрасли 1</span>
+																				</label>
+																			</div>
+																			<div class="select-box__option">
+																				<input type="radio" class="select-box__radio" id="lk-region-industry-02" name="lk-region-industry">
+																				<label for="lk-region-industry-02" class="select-box__label">
+																					<span class="select-box__title">Иконка отрасли 2</span>
+																				</label>
+																			</div>
+																			<div class="select-box__option">
+																				<input type="radio" class="select-box__radio" id="lk-region-industry-03" name="lk-region-industry">
+																				<label for="lk-region-industry-03" class="select-box__label">
+																					<span class="select-box__title">Иконка отрасли 3</span>
+																				</label>
+																			</div>
+																			<div class="select-box__option">
+																				<input type="radio" class="select-box__radio" id="lk-region-industry-04" name="lk-region-industry">
+																				<label for="lk-region-industry-04" class="select-box__label">
+																					<span class="select-box__title">Иконка отрасли 4</span>
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="select-box__selected">
+																	<span class="select-box__placeholder select-box__placeholder--active">Иконка отрасли</span>
+																	<span class="select-box__values"></span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="lk-region-settings__column">
+														<div class="input-group lk-region-settings__input">
+															<textarea id="lk-region-description-industry" class="input-group__textarea" placeholder="Описание (не более 400 символов)"></textarea>
+															<label for="lk-region-description-industry" class="input-group__label">Описание (не более 400 символов)</label>
+														</div>
+														<div class="input-group lk-region-settings__input">
+															<input type="text" class="input-group__input" id="lk-region-industry-name-01" placeholder="Название блока (напр., контактное лицо/ адрес организации/ сферы инвестиционной деятельности и т.д.)">
+															<label for="lk-region-industry-name-01" class="input-group__label">Название блока (напр., контактное лицо/ адрес организации/ сферы инвестиционной деятельности и т.д.)</label>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="lk-region-settings__buttons">
+												<a href="#" class="lk-region-settings__btn btn btn--opacity-blue">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+													<span>Добавить отрасль</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lk-regions__right">
+								<div class="lk-regions__preview">
+									<picture class="lk-regions__preview-img">
+										<img src="img/regions-preview-02.jpg" alt="Image">
+									</picture>
+									<span class="lk-regions__help">Пример отображения информации заполненного блока</span>
+								</div>
+							</div>
+						</div>
+						<div class="lk-regions__wrapper">
+							<div class="lk-regions__left">
+								<div class="lk-region-settings">
+									<div class="lk-region-settings__top">
+										<div class="lk-region-settings__inner">
+											<h3 class="lk-region-settings__heading">Ключевые цифры</h3>
+											<label for="switch-regions-03" class="switch lk-region-settings__switch">
+												<input type="checkbox" id="switch-regions-03" class="switch__input" checked>
+												<div class="switch__group">
+													<span class="switch__icon"></span>
+												</div>
+											</label>
+										</div>
+										<span class="lk-region-settings__help is--hidden">Если вы хотите, чтобы этот раздел отображался на сайте, то включите видимость этого раздела</span>
+									</div>
+									<div class="lk-region-settings__main">
+										<form action="#" class="lk-region-settings__form">
+											<div class="lk-region-settings__row lk-region-settings__row--first-short">
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-numbers-value-01" placeholder="Цифра 1">
+														<label for="lk-region-numbers-value-01" class="input-group__label">Цифра 1</label>
+														<span class="input-group__help">Указать значение с единицами измерения</span>
+													</div>
+												</div>
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-numbers-description-01" placeholder="Описание">
+														<label for="lk-region-numbers-description-01" class="input-group__label">Описание</label>
+														<span class="input-group__help">Указать показатель измерения, например, население (не более 400 символов)</span>
+													</div>
+												</div>
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-numbers-value-02" placeholder="Цифра 2">
+														<label for="lk-region-numbers-value-02" class="input-group__label">Цифра 2</label>
+													</div>
+												</div>
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-numbers-description-02" placeholder="Описание">
+														<label for="lk-region-numbers-description-02" class="input-group__label">Описание</label>
+													</div>
+												</div>
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-numbers-value-03" placeholder="Цифра 3">
+														<label for="lk-region-numbers-value-03" class="input-group__label">Цифра 3</label>
+													</div>
+												</div>
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-numbers-description-03" placeholder="Описание">
+														<label for="lk-region-numbers-description-03" class="input-group__label">Описание</label>
+													</div>
+												</div>
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-numbers-value-04" placeholder="Цифра 4">
+														<label for="lk-region-numbers-value-04" class="input-group__label">Цифра 4</label>
+													</div>
+												</div>
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-numbers-description-04" placeholder="Описание">
+														<label for="lk-region-numbers-description-04" class="input-group__label">Описание</label>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="lk-regions__right">
+								<div class="lk-regions__preview">
+									<picture class="lk-regions__preview-img">
+										<img src="img/regions-preview-03.jpg" alt="Image">
+									</picture>
+									<span class="lk-regions__help">Пример отображения информации заполненного блока</span>
+								</div>
+							</div>
+						</div>
+						<div class="lk-regions__wrapper">
+							<div class="lk-regions__left">
+								<div class="lk-region-settings">
+									<div class="lk-region-settings__top">
+										<div class="lk-region-settings__inner">
+											<h3 class="lk-region-settings__heading">Внешняя торговля</h3>
+											<label for="switch-regions-04" class="switch lk-region-settings__switch">
+												<input type="checkbox" id="switch-regions-04" class="switch__input" checked>
+												<div class="switch__group">
+													<span class="switch__icon"></span>
+												</div>
+											</label>
+										</div>
+										<span class="lk-region-settings__help is--hidden">Если вы хотите, чтобы этот раздел отображался на сайте, то включите видимость этого раздела</span>
+									</div>
+									<div class="lk-region-settings__main">
+										<form action="#" class="lk-region-settings__form">
+											<div class="lk-region-settings__column">
+												<div class="input-group lk-region-settings__input">
+													<textarea id="lk-region-description-trade" class="input-group__textarea" placeholder="Описание (не более 400 символов)"></textarea>
+													<label for="lk-region-description-trade" class="input-group__label">Описание (не более 400 символов)</label>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="lk-regions__right">
+								<div class="lk-regions__preview">
+									<picture class="lk-regions__preview-img">
+										<img src="img/regions-preview-04.jpg" alt="Image">
+									</picture>
+									<span class="lk-regions__help">Пример отображения информации заполненного блока</span>
+								</div>
+							</div>
+						</div>
+						<div class="lk-regions__wrapper">
+							<div class="lk-regions__left">
+								<div class="lk-region-settings">
+									<div class="lk-region-settings__top">
+										<div class="lk-region-settings__inner">
+											<h3 class="lk-region-settings__heading">Врезка 1</h3>
+											<label for="switch-regions-05" class="switch lk-region-settings__switch">
+												<input type="checkbox" id="switch-regions-05" class="switch__input" checked>
+												<div class="switch__group">
+													<span class="switch__icon"></span>
+												</div>
+											</label>
+										</div>
+										<span class="lk-region-settings__help is--hidden">Если вы хотите, чтобы этот раздел отображался на сайте, то включите видимость этого раздела</span>
+									</div>
+									<div class="lk-region-settings__main">
+										<span class="lk-region-settings__text">В зависимости от количества заполненных полей данного раздела зависит его внешний вид. От просто фона до максимального заполнения параметрами и описанием. При не заполнении поля «Описание» левая колонка будет заполнена только фоном. Аналогично с полями «Показатель».</span>
+										<form action="#" class="lk-region-settings__form">
+											<div class="lk-region-settings__column">
+												<div class="photo-upload photo-upload--wrap lk-region-settings__input">
+													<label for="upload-photo" class="photo-upload__label">
+														<input type="file" id="upload-photo" class="photo-upload__input">
+														<div class="photo-upload__preview">
+															<svg class="photo-upload__icon">
+																<use xlink:href="img/sprite.svg#icon-camera"></use>
+															</svg>
+															<span class="photo-upload__title">Фото</span>
+														</div>
+														<div class="input-group photo-upload__input-group">
+															<textarea id="lk-region-description-photo" class="input-group__textarea" placeholder="Описание (не более 400 символов)"></textarea>
+															<label for="lk-region-description-photo" class="input-group__label">Описание (не более 400 символов)</label>
+														</div>
+													</label>
+													<div class="photo-upload__uploaded is--hidden">
+														<picture class="photo-upload__img">
+															<img src="img/uploaded-photo.jpg" alt="Image">
+														</picture>
+														<button class="photo-upload__delete">
+															<svg class="photo-upload__delete-icon">
+																<use xlink:href="img/sprite.svg#icon-close-circle"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+												<span class="lk-region-settings__help">При публикации на фото накладывается фильтр размытия и фото становится фоном для описания и/ или заполненных показателей</span>
+											</div>
+											<div class="lk-region-settings__row">
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-incut-value-01" placeholder="Показатели">
+														<label for="lk-region-incut-value-01" class="input-group__label">Показатели</label>
+													</div>
+												</div>
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-incut-description-01" placeholder="Описание">
+														<label for="lk-region-incut-description-01" class="input-group__label">Описание</label>
+													</div>
+												</div>
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-incut-value-02" placeholder="Показатели">
+														<label for="lk-region-incut-value-02" class="input-group__label">Показатели</label>
+													</div>
+												</div>
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-incut-description-02" placeholder="Описание">
+														<label for="lk-region-incut-description-02" class="input-group__label">Описание</label>
+													</div>
+												</div>
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-incut-value-03" placeholder="Показатели">
+														<label for="lk-region-incut-value-03" class="input-group__label">Показатели</label>
+													</div>
+												</div>
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-incut-description-03" placeholder="Описание">
+														<label for="lk-region-incut-description-03" class="input-group__label">Описание</label>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="lk-regions__right">
+								<div class="lk-regions__preview">
+									<picture class="lk-regions__preview-img">
+										<img src="img/regions-preview-05.jpg" alt="Image">
+									</picture>
+									<span class="lk-regions__help">Пример отображения информации заполненного блока</span>
+								</div>
+							</div>
+						</div>
+						<div class="lk-regions__wrapper">
+							<div class="lk-regions__left">
+								<div class="lk-region-settings">
+									<div class="lk-region-settings__top">
+										<div class="lk-region-settings__inner">
+											<h3 class="lk-region-settings__heading">Льготы для инвесторов</h3>
+											<label for="switch-regions-06" class="switch lk-region-settings__switch">
+												<input type="checkbox" id="switch-regions-06" class="switch__input" checked>
+												<div class="switch__group">
+													<span class="switch__icon"></span>
+												</div>
+											</label>
+										</div>
+										<span class="lk-region-settings__help is--hidden">Если вы хотите, чтобы этот раздел отображался на сайте, то включите видимость этого раздела</span>
+									</div>
+									<div class="lk-region-settings__main">
+										<form action="#" class="lk-region-settings__form">
+											<div class="lk-region-settings__column">
+												<div class="input-group lk-region-settings__input">
+													<textarea id="lk-region-description-invest" class="input-group__textarea" placeholder="Описание (не более 400 символов)"></textarea>
+													<label for="lk-region-description-invest" class="input-group__label">Описание (не более 400 символов)</label>
+												</div>
+												<div class="photo-upload lk-region-settings__input">
+													<label for="upload-photo" class="photo-upload__label">
+														<input type="file" id="upload-photo" class="photo-upload__input">
+														<div class="photo-upload__preview">
+															<svg class="photo-upload__icon">
+																<use xlink:href="img/sprite.svg#icon-camera"></use>
+															</svg>
+															<span class="photo-upload__title">Фото</span>
+														</div>
+													</label>
+													<div class="photo-upload__uploaded is--hidden">
+														<picture class="photo-upload__img">
+															<img src="img/uploaded-photo.jpg" alt="Image">
+														</picture>
+														<button class="photo-upload__delete">
+															<svg class="photo-upload__delete-icon">
+																<use xlink:href="img/sprite.svg#icon-close-circle"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="lk-regions__right">
+								<div class="lk-regions__preview">
+									<picture class="lk-regions__preview-img">
+										<img src="img/regions-preview-06.jpg" alt="Image">
+									</picture>
+									<span class="lk-regions__help">Пример отображения информации заполненного блока</span>
+								</div>
+							</div>
+						</div>
+						<div class="lk-regions__wrapper">
+							<div class="lk-regions__left">
+								<div class="lk-region-settings">
+									<div class="lk-region-settings__top">
+										<div class="lk-region-settings__inner">
+											<h3 class="lk-region-settings__heading">Врезка 2</h3>
+											<label for="switch-regions-07" class="switch lk-region-settings__switch">
+												<input type="checkbox" id="switch-regions-07" class="switch__input">
+												<div class="switch__group">
+													<span class="switch__icon"></span>
+												</div>
+											</label>
+										</div>
+										<span class="lk-region-settings__help">Если вы хотите, чтобы этот раздел отображался на сайте, то включите видимость этого раздела</span>
+									</div>
+									<div class="lk-region-settings__main">
+										<form action="#" class="lk-region-settings__form">
+											<div class="lk-region-settings__column">
+												<div class="photo-upload photo-upload--wrap lk-region-settings__input">
+													<label for="upload-photo" class="photo-upload__label">
+														<input type="file" id="upload-photo" class="photo-upload__input">
+														<div class="photo-upload__preview">
+															<svg class="photo-upload__icon">
+																<use xlink:href="img/sprite.svg#icon-camera"></use>
+															</svg>
+															<span class="photo-upload__title">Фото</span>
+														</div>
+														<div class="input-group photo-upload__input-group">
+															<textarea id="lk-region-description-photo" class="input-group__textarea" placeholder="Описание (не более 400 символов)"></textarea>
+															<label for="lk-region-description-photo" class="input-group__label">Описание (не более 400 символов)</label>
+														</div>
+													</label>
+													<div class="photo-upload__uploaded is--hidden">
+														<picture class="photo-upload__img">
+															<img src="img/uploaded-photo.jpg" alt="Image">
+														</picture>
+														<button class="photo-upload__delete">
+															<svg class="photo-upload__delete-icon">
+																<use xlink:href="img/sprite.svg#icon-close-circle"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+												<span class="lk-region-settings__help">При публикации на фото накладывается фильтр размытия и фото становится фоном для описания и/ или заполненных показателей</span>
+											</div>
+											<div class="lk-region-settings__row">
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-incut-value-01" placeholder="Показатели">
+														<label for="lk-region-incut-value-01" class="input-group__label">Показатели</label>
+													</div>
+												</div>
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-incut-description-01" placeholder="Описание">
+														<label for="lk-region-incut-description-01" class="input-group__label">Описание</label>
+													</div>
+												</div>
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-incut-value-02" placeholder="Показатели">
+														<label for="lk-region-incut-value-02" class="input-group__label">Показатели</label>
+													</div>
+												</div>
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-incut-description-02" placeholder="Описание">
+														<label for="lk-region-incut-description-02" class="input-group__label">Описание</label>
+													</div>
+												</div>
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-incut-value-03" placeholder="Показатели">
+														<label for="lk-region-incut-value-03" class="input-group__label">Показатели</label>
+													</div>
+												</div>
+												<div class="lk-region-settings__row-item">
+													<div class="input-group lk-region-settings__input">
+														<input type="text" class="input-group__input" id="lk-region-incut-description-03" placeholder="Описание">
+														<label for="lk-region-incut-description-03" class="input-group__label">Описание</label>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="lk-regions__right">
+								<div class="lk-regions__preview">
+									<picture class="lk-regions__preview-img">
+										<img src="img/regions-preview-07.jpg" alt="Image">
+									</picture>
+									<span class="lk-regions__help">Пример отображения информации заполненного блока</span>
+								</div>
+							</div>
+						</div>
+						<div class="lk-regions__wrapper">
+							<div class="lk-regions__left">
+								<div class="lk-region-settings">
+									<div class="lk-region-settings__top">
+										<div class="lk-region-settings__inner">
+											<h3 class="lk-region-settings__heading">Контакты</h3>
+											<label for="switch-regions-08" class="switch lk-region-settings__switch">
+												<input type="checkbox" id="switch-regions-08" class="switch__input" checked>
+												<div class="switch__group">
+													<span class="switch__icon"></span>
+												</div>
+											</label>
+										</div>
+										<span class="lk-region-settings__help is--hidden">Если вы хотите, чтобы этот раздел отображался на сайте, то включите видимость этого раздела</span>
+									</div>
+									<div class="lk-region-settings__main">
+										<div class="lk-region-settings__block">
+											<h3 class="lk-region-settings__title">Контакты региональных властей и сотрудников, ответственных за межрегиональное сотрудничество, властей крупных городов, прямые линии</h3>
+											<div class="lk-region-settings__group">
+												<div class="lk-region-settings__info">
+													<h3 class="lk-region-settings__title">Контакт 1</h3>
+													<button class="lk-region-settings__delete" aria-label="Удалить">
+														<svg class="lk-region-settings__delete-icon">
+															<use xlink:href="img/sprite.svg#icon-delete"></use>
+														</svg>
+													</button>
+												</div>
+												<form action="#" class="lk-region-settings__form">
+													<div class="lk-region-settings__column">
+														<div class="input-group lk-region-settings__input">
+															<input type="text" class="input-group__input" id="lk-region-contact-name-01" placeholder="Название блока (напр., контактное лицо/ адрес организации/ сферы инвестиционной деятельности и т.д.)">
+															<label for="lk-region-contact-name-01" class="input-group__label">Название блока (напр., контактное лицо/ адрес организации/ сферы инвестиционной деятельности и т.д.)</label>
+														</div>
+														<div class="input-group lk-region-settings__input">
+															<textarea id="lk-region-description-01" class="input-group__textarea" placeholder="Описание (не более 400 символов)"></textarea>
+															<label for="lk-region-description-01" class="input-group__label">Описание (не более 400 символов)</label>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="lk-region-settings__buttons">
+												<a href="#" class="lk-region-settings__btn btn btn--opacity-blue">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+													<span>Добавить контакт</span>
+												</a>
+											</div>
+										</div>
+										<div class="lk-region-settings__block">
+											<h3 class="lk-region-settings__title">Контакты бизнес-ассоциаций региона, города, региональных фондов поддержки и сопровождения бизнеса.</h3>
+											<div class="lk-region-settings__group">
+												<div class="lk-region-settings__info">
+													<h3 class="lk-region-settings__title">Контакт 2</h3>
+													<button class="lk-region-settings__delete" aria-label="Удалить">
+														<svg class="lk-region-settings__delete-icon">
+															<use xlink:href="img/sprite.svg#icon-delete"></use>
+														</svg>
+													</button>
+												</div>
+												<form action="#" class="lk-region-settings__form">
+													<div class="lk-region-settings__column">
+														<div class="input-group lk-region-settings__input">
+															<input type="text" class="input-group__input" id="lk-region-contact-name-02" placeholder="Название блока (напр., фонд/ центр и т.д.)">
+															<label for="lk-region-contact-name-02" class="input-group__label">Название блока (напр., фонд/ центр и т.д.)</label>
+														</div>
+														<div class="input-group lk-region-settings__input">
+															<textarea id="lk-region-description-02" class="input-group__textarea" placeholder="Описание (не более 400 символов)"></textarea>
+															<label for="lk-region-description-02" class="input-group__label">Описание (не более 400 символов)</label>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="lk-region-settings__buttons">
+												<a href="#" class="lk-region-settings__btn btn btn--opacity-blue">
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-plus"></use>
+													</svg>
+													<span>Добавить контакт</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lk-regions__right">
+								<div class="lk-regions__preview">
+									<picture class="lk-regions__preview-img">
+										<img src="img/regions-preview-08.jpg" alt="Image">
+									</picture>
+									<span class="lk-regions__help">Пример отображения информации заполненного блока</span>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- end of lk -->
