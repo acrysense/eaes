@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Портал по межрегиональному сотрудничеству - Новая новость</title>
+	<title>Портал по межрегиональному сотрудничеству - Инвестиционная карта</title>
 	<meta property="og:title" content="Word Finder">
 	<meta property="og:description" content="Description">
 	<meta property="og:url" content="/">
@@ -166,46 +166,23 @@
 				<div class="bg-top-circle bg-top-circle--xl"></div>
 			</div>
 			<!-- end of decor -->
-			<!-- page top -->
-			<section class="page-top" id="page-top">
+			<!-- map -->
+			<section class="map" id="map">
 				<div class="container">
-					<nav class="breadcrumb page-top__breadcrumb" aria-label="Breadcrumb">
-						<ol class="breadcrumb__list">
-							<li class="breadcrumb__item">
-								<a href="index.html" class="breadcrumb__link">Главная</a>
-							</li>
-							<li class="breadcrumb__item">
-								<a href="lk.html" class="breadcrumb__link">Личный кабинет</a>
-							</li>
-							<li class="breadcrumb__item">
-								<a href="lk-news.html" class="breadcrumb__link">Новости</a>
-							</li>
-							<li class="breadcrumb__item">
-								<a href="lk-news-add.html" class="breadcrumb__link">Новая новость</a>
-							</li>
-						</ol>
-					</nav>
-					<a href="lk-news.html" class="page-top__back btn btn--opacity-blue">
-						<svg>
-							<use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
-						</svg>
-						<span>Назад к списку новостей</span>
-					</a>
-				</div>
-			</section>
-			<!-- end of page top -->
-			<!-- lk -->
-			<div class="lk" id="lk">
-				<div class="container">
-					<div class="lk__wrapper lk__wrapper--md">
-						<h2 class="lk__heading">Добавить новость</h2>
-						<form action="#" class="lk-form lk__form">
-							<div class="lk-form__column">
-								<div class="input-group lk-form__input">
-									<input type="text" class="input-group__input" id="add-title" placeholder="Заголовок">
-									<label for="add-title" class="input-group__label">Заголовок</label>
-								</div>
-								<div class="select-box lk-form__select">
+					<div class="map__wrap">
+						<div class="map__sidebar">
+							<nav class="breadcrumb map__breadcrumb" aria-label="Breadcrumb">
+								<ol class="breadcrumb__list">
+									<li class="breadcrumb__item">
+										<a href="index.html" class="breadcrumb__link">Главная</a>
+									</li>
+									<li class="breadcrumb__item">
+										<a href="lk.html" class="breadcrumb__link">Инвестиционная карта</a>
+									</li>
+								</ol>
+							</nav>
+							<div class="map__filters">
+								<div class="select-box map__filters-item">
 									<div class="select-box__container">
 										<div class="select-box__wrap">
 											<div class="select-box__scroll">
@@ -252,7 +229,7 @@
 										<span class="select-box__values"></span>
 									</div>
 								</div>
-								<div class="select-box lk-form__select">
+								<div class="select-box map__filters-item">
 									<div class="select-box__container">
 										<div class="select-box__wrap">
 											<div class="select-box__scroll">
@@ -260,21 +237,35 @@
 													<input type="checkbox" class="select-box__radio" id="countries-select-01" name="countries-select">
 													<label for="countries-select-01" class="select-box__label">
 														<span class="select-box__icon"></span>
-														<span class="select-box__title">Краснодарский край</span>
+														<span class="select-box__title">Армения</span>
 													</label>
 												</div>
 												<div class="select-box__option">
 													<input type="checkbox" class="select-box__radio" id="countries-select-02" name="countries-select">
 													<label for="countries-select-02" class="select-box__label">
 														<span class="select-box__icon"></span>
-														<span class="select-box__title">Московская область</span>
+														<span class="select-box__title">Беларусь</span>
 													</label>
 												</div>
 												<div class="select-box__option">
 													<input type="checkbox" class="select-box__radio" id="countries-select-03" name="countries-select">
 													<label for="countries-select-03" class="select-box__label">
 														<span class="select-box__icon"></span>
-														<span class="select-box__title">Белгородская область</span>
+														<span class="select-box__title">Казахстан</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="countries-select-04" name="countries-select">
+													<label for="countries-select-04" class="select-box__label">
+														<span class="select-box__icon"></span>
+														<span class="select-box__title">Киргизия</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="checkbox" class="select-box__radio" id="countries-select-05" name="countries-select">
+													<label for="countries-select-05" class="select-box__label">
+														<span class="select-box__icon"></span>
+														<span class="select-box__title">Россия</span>
 													</label>
 												</div>
 											</div>
@@ -285,29 +276,38 @@
 										<span class="select-box__values"></span>
 									</div>
 								</div>
-								<div class="select-box lk-form__select">
+								<div class="select-box select-box--single map__filters-item">
 									<div class="select-box__container">
 										<div class="select-box__wrap">
 											<div class="select-box__scroll">
 												<div class="select-box__option">
-													<input type="checkbox" class="select-box__radio" id="industry-select-01" name="industry-select">
-													<label for="industry-select-01" class="select-box__label">
-														<span class="select-box__icon"></span>
-														<span class="select-box__title">Отрасль 1</span>
+													<input type="radio" class="select-box__radio" id="countries-select-01" name="countries-select">
+													<label for="countries-select-01" class="select-box__label">
+														<span class="select-box__title">Армения</span>
 													</label>
 												</div>
 												<div class="select-box__option">
-													<input type="checkbox" class="select-box__radio" id="industry-select-02" name="industry-select">
-													<label for="industry-select-02" class="select-box__label">
-														<span class="select-box__icon"></span>
-														<span class="select-box__title">Отрасль 2</span>
+													<input type="radio" class="select-box__radio" id="countries-select-02" name="countries-select">
+													<label for="countries-select-02" class="select-box__label">
+														<span class="select-box__title">Беларусь</span>
 													</label>
 												</div>
 												<div class="select-box__option">
-													<input type="checkbox" class="select-box__radio" id="industry-select-03" name="industry-select">
-													<label for="industry-select-03" class="select-box__label">
-														<span class="select-box__icon"></span>
-														<span class="select-box__title">Отрасль 3</span>
+													<input type="radio" class="select-box__radio" id="countries-select-03" name="countries-select">
+													<label for="countries-select-03" class="select-box__label">
+														<span class="select-box__title">Казахстан</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="countries-select-04" name="countries-select">
+													<label for="countries-select-04" class="select-box__label">
+														<span class="select-box__title">Киргизия</span>
+													</label>
+												</div>
+												<div class="select-box__option">
+													<input type="radio" class="select-box__radio" id="countries-select-05" name="countries-select">
+													<label for="countries-select-05" class="select-box__label">
+														<span class="select-box__title">Россия</span>
 													</label>
 												</div>
 											</div>
@@ -318,116 +318,30 @@
 										<span class="select-box__values"></span>
 									</div>
 								</div>
-								<div class="photos-upload lk-form__input">
-									<label for="upload-photo" class="photos-upload__label">
-										<input type="file" id="upload-photo" class="photos-upload__input">
-										<div class="photos-upload__preview">
-											<svg class="photos-upload__icon">
-												<use xlink:href="img/sprite.svg#icon-attach"></use>
-											</svg>
-											<span class="photos-upload__title">Изображение</span>
+								<div class="map__filters-checkboxes">
+									<label for="current-projects" class="switch map__filters-item">
+										<input type="checkbox" id="current-projects" class="switch__input" checked>
+										<div class="switch__group">
+											<span class="switch__icon"></span>
+											<span class="switch__title">Действующие проекты</span>
 										</div>
 									</label>
-									<div class="photos-upload__uploaded is--hidden"></div>
-								</div>
-								<div class="lk-form__input calendar">
-									<div class="calendar__wrapper">
-										<div class="calendar__control">
-											<input type="text" id="add-date" class="calendar__input calendar-dropdown-js" placeholder="Дата">
-											<label for="add-date" class="input-group__label">Дата</label>
+									<label for="potential-projects" class="switch map__filters-item">
+										<input type="checkbox" id="potential-projects" class="switch__input">
+										<div class="switch__group">
+											<span class="switch__icon"></span>
+											<span class="switch__title">Потенциальные проекты</span>
 										</div>
-										<a href="#" class="calendar__clear">Сбросить</a>
-									</div>
-								</div>
-								<div class="input-group lk-form__input">
-									<textarea id="add-text" class="input-group__textarea" placeholder="Текст новости, не более 400 символов"></textarea>
-									<label for="add-text" class="input-group__label">Текст новости, не более 400 символов</label>
-								</div>
-								<div class="input-group lk-form__input">
-									<input type="text" class="input-group__input" id="add-signature" placeholder="Подпись">
-									<label for="add-signature" class="input-group__label">Подпись</label>
+									</label>
 								</div>
 							</div>
-							<div class="lk-form__buttons">
-								<button class="lk-form__btn btn">Сохранить</button>
-								<button class="lk-form__btn btn btn--opacity-blue">Сохранить и опубликовать</button>
-								<button class="lk-form__btn btn btn--opacity-blue">
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-eye"></use>
-									</svg>
-									<span>Предпросмотр</span>
-								</button>
-							</div>
-						</form>
+						</div>
+						<div class="map__frame" id="map-container"></div>
 					</div>
 				</div>
-			</div>
-			<!-- end of lk -->
+			</section>
 		</div>
 		<!-- end of content -->
-		<!-- footer -->
-		<footer class="footer" id="footer">
-			<div class="container">
-				<div class="footer__wrapper">
-					<div class="footer__block">
-						<a href="index.html" class="footer__logotype">
-							<img src="img/logotype.svg" width="93.5px" height="60px" alt="Портал по межрегиональному сотрудничеству">
-						</a>
-					</div>
-					<div class="footer__block">
-						<ul class="footer__list">
-							<li class="footer__item">
-								<a href="#" class="footer__link footer__link--uppercase">О ЕАЭС</a>
-							</li>
-							<li class="footer__item">
-								<a href="#" class="footer__link footer__link--uppercase">Возможности ЕАЭС <br>для бизнеса</a>
-							</li>
-							<li class="footer__item">
-								<a href="#" class="footer__link footer__link--uppercase">регионы</a>
-							</li>
-							<li class="footer__item">
-								<a href="#" class="footer__link footer__link--uppercase">инвестиционная карта</a>
-							</li>
-							<li class="footer__item">
-								<a href="#" class="footer__link footer__link--uppercase">Контакты</a>
-							</li>
-						</ul>
-					</div>
-					<div class="footer__block">
-						<ul class="footer__list">
-							<li class="footer__item">
-								<a href="#" class="footer__link">Сайт Евразийского экономического союза </a>
-							</li>
-							<li class="footer__item">
-								<a href="#" class="footer__link">Правовой портал Евразийского экономического союза</a>
-							</li>
-							<li class="footer__item">
-								<a href="#" class="footer__link">Портал Функционирования внутренних рынков ЕАЭС</a>
-							</li>
-							<li class="footer__item">
-								<a href="#" class="footer__link">Портал о цифровой повестке ЕАЭС</a>
-							</li>
-							<li class="footer__item">
-								<a href="#" class="footer__link">Защита прав потребителей</a>
-							</li>
-							<li class="footer__item">
-								<a href="#" class="footer__link">Евразийский реестр промышленных товаров государств-членов ЕАЭС</a>
-							</li>
-						</ul>
-					</div>
-					<div class="footer__block">
-						<a href="tel:+74956692400" class="footer__phone">+7 (495) 669-24-00, доб.41-33</a>
-						<div class="footer__addresses">
-							<address class="footer__addess">115114, г. Москва, ул. Летниковская, д. 2, стр. 1, стр. 2</address>
-							<address class="footer__addess">119121, г. Москва, Смоленский бульвар, д.3/5, стр. 1</address>
-						</div>
-						<a href="#" class="footer__btn btn btn--opacity-white">Напишите нам</a>
-						<a href="#" class="footer__link footer__link--light">Политика конфиденциальности</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- end of footer -->
 	</div>
 	<!-- end of wrapper -->
 	<!-- modals -->
@@ -548,6 +462,8 @@
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
+	<script src="js/states-data.min.js"></script>
+	<script src="js/map.min.js"></script>
 </body>
 
 </html>
